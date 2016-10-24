@@ -1,0 +1,12 @@
+
+.container {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: red;
+}
+.alternative {
+	width: auto;
+	height: auto;
+	color: #555;
+}
