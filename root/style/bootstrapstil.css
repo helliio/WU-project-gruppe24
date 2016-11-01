@@ -1,0 +1,120 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+.col-fixed-240 {
+  width: 240px;
+  background: red;
+  position: fixed;
+  height: 100%;
+  -15px;
+}
+#open-sidebar {
+  font-size: 20pt;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.col-fixed-50 {
+  width: 50px;
+  background: red;
+  position: fixed;
+  height: 100%;
+  margin-left: -15px;
+}
+
+.col-offset-240 {
+  padding-left: 255px;
+}
+
+.col-offset-50 {
+  padding-left: 65px;
+}
+
+.visible-xs h2 {
+	font-size: 150%;
+}
+.visible-sm h2 {
+	font-size: 200%;
+}
+.visible-md h2 {
+	font-size: 250%;
+}
+.visible-lg h2 {
+	font-size: 300%;
+}
+
+#logo-left-right {
+	line-height: 5vmax;
+	font-weight: bold;
+	text-shadow: 0.4vmax 0.4vmax 0.1vmax #045;
+	font-size: 400%;
+	font-size: 5vw;
+	font-size: 5vmax;
+	color: white;
+}
+h3 {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+}
+.fill {
+	display: inline-block;
+	width: 100% !important;
+	background-color: blue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#nopadding {
+	padding: 0;
+}
+.navbar {
+	margin: 0;
+	border-radius: 0px;
+}
+.panel-group, .panel {
+	margin: 0;
+	border-radius: 0px !important;
+}
+.jumbotron {
+	margin-bottom: 0;
+    background: #EEE !important;
+    background: -webkit-linear-gradient(#EEE, #CCC) !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEE, #CCC) !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEE, #CCC) !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEE, #CCC) !important; /* Standard syntax */
+    text-shadow: 1px -1px 0px white;
+}
