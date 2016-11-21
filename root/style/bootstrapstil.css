@@ -194,9 +194,12 @@ h2 {
 .jumbotron {
 	margin-bottom: 0;
 	border-radius: 0 !important;
-    background: #EEE !important;
-    background: -webkit-linear-gradient(#EEE, #CCC) !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#EEE, #CCC) !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#EEE, #CCC) !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#EEE, #CCC) !important; /* Standard syntax */
+}
+.col-md-8 {
+	padding: 0 !important;
+	overflow-x: hidden;
+}
+.list-group-item {
+	height: 100px;
+	padding-left: 10px;
 }
