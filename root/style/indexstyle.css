@@ -15,7 +15,6 @@ a, a:visited, a:hover {
 	font-weight: bold;
 	text-shadow: 0.4vmax 0.4vmax 0.1vmax #045;
 }
-
 .logo-flex-cell {
 	display: inline-flex;
 }

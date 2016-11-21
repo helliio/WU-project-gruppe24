@@ -1,0 +1,49 @@
+.hytteikon {
+	float: left;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.bestillingsskjema {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	height: auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+input[type=text] {
+	width: 100%;
+	border: 1px solid #444;
+	padding: 5px;
+	box-sizing: border-box;
+}
+input[type=range] {
+	width: 100%;
+	height: 30px;
+}
+.skjematekst {
+	width: inherit;
+	font-size: 12pt;
+	color: black;
+}
+.split-wrapper {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+.tekst-venstre {
+	font-size: 10pt;
+	color: white;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	padding-right: 10px;
+	float: left;
+}
+.element-høyre {
+	height: 30px;
+	color: #FFF;
+	overflow: hidden;
+}

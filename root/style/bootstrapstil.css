@@ -29,13 +29,11 @@
         background-color: lightblue;
     }
 }
-
 * {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
 }
-
 .kill-padding-margin {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
@@ -55,19 +53,15 @@
 .kill-padding-margin-all-children, .kill-padding-margin-all-children * {
 	margin-left: 0px !important; padding-left: 0px !important; padding-right: 0px !important; margin-right: 0px !important;
 }
-
-
 body, html {
 	height: 100% !important;
 	width: 100% !important;
 	background-color: #33AA00;
 }
-
 /* CSS for fixed-fluid layout */
 .left-scroll {
 	direction: rtl; height: 100vh; overflow-y: scroll; overflow-x: hidden; scroll-behavior: smooth;
 }
-
 div::-webkit-scrollbar {
   width: 15px;
   height: 15px;
@@ -100,26 +94,21 @@ div::-webkit-scrollbar-track:active {
 div::-webkit-scrollbar-corner {
   background: transparent;
 }
-
-
 .fixed {
     width: 415px;  /* the fixed width required */
     float: left;
     background-color: #FFF;
     height: auto;
-    	padding-top: -15px;
+    padding-top: -15px;
 }
-
 .fixed + div {
      margin-left: 415px;  /* must match the fixed width in the .fixed class */
      overflow: hidden;
 }
-
 .fill { 
     min-height: 100%;
     position: relative;
 }
-
 .filler:after {
     content: "";
     height: 100%;
@@ -153,7 +142,12 @@ div::-webkit-scrollbar-corner {
 .visible-lg h2 {
 	font-size: 300%;
 }
-
+.visible-xs .bestillingsskjema, .visible-sm .bestillingsskjema {
+	width: 100%;
+}
+.visible-md .bestillingsskjema, .visible-lg .bestillingsskjema {
+	width: 600px;
+}
 #logo-left-right {
 	line-height: 5vmax;
 	font-weight: bold;
