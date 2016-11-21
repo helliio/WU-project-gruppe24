@@ -1,0 +1,202 @@
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+.kill-padding-margin {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.kill-padding-margin-all-children, .kill-padding-margin-all-children * {
+	margin-left: 0px !important; padding-left: 0px !important; padding-right: 0px !important; margin-right: 0px !important;
+}
+body, html {
+	height: 100% !important;
+	width: 100% !important;
+	background-color: #33AA00;
+}
+/* CSS for fixed-fluid layout */
+.left-scroll {
+	direction: rtl; height: 100vh; overflow-y: scroll; overflow-x: hidden; scroll-behavior: smooth;
+}
+div::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+div::-webkit-scrollbar-button {
+  height: 0;
+  background-color: #FFF;
+  border: none;
+}
+div::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px solid #ffffff;
+  border-radius: 100px;
+}
+div::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+div::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+div::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+div::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+div::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+div::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.fixed {
+    width: 415px;  /* the fixed width required */
+    float: left;
+    background-color: #FFF;
+    height: auto;
+    padding-top: -15px;
+}
+.fixed + div {
+     margin-left: 415px;  /* must match the fixed width in the .fixed class */
+     overflow: hidden;
+}
+.fill { 
+    min-height: 100%;
+    position: relative;
+}
+.filler:after {
+    content: "";
+    height: 100%;
+    background-color: #33AA00;
+    position: absolute;
+    width: inherit;
+   	padding-top: -15px;
+    z-index: -1;
+}
+.sidebar-bg {
+	width: 415px;
+	height: 100vh;
+}
+
+#open-sidebar {
+  font-size: 20pt;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.visible-xs h2 {
+	font-size: 150%;
+}
+.visible-sm h2 {
+	font-size: 200%;
+}
+.visible-md h2 {
+	font-size: 250%;
+}
+.visible-lg h2 {
+	font-size: 300%;
+}
+.visible-xs .bestillingsskjema, .visible-sm .bestillingsskjema {
+	width: 100%;
+}
+.visible-md .bestillingsskjema, .visible-lg .bestillingsskjema {
+	width: 600px;
+}
+#logo-left-right {
+	line-height: 5vmax;
+	font-weight: bold;
+	text-shadow: 0.4vmax 0.4vmax 0.1vmax #045;
+	font-size: 400%;
+	font-size: 5vw;
+	font-size: 5vmax;
+	color: white;
+}
+h3 {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+}
+.fillwithcolor {
+	display: inline-block;
+	width: 100% !important;
+	background-color: blue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#nopadding {
+	padding: 0 !important;
+}
+.navbar {
+	margin: 0;
+	border-radius: 0px;
+}
+.panel-group, .panel {
+	margin: 0;
+	border-radius: 0px !important;
+}
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0 !important;
+    background: #EEE !important;
+    background: -webkit-linear-gradient(#EEE, #CCC) !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEE, #CCC) !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEE, #CCC) !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEE, #CCC) !important; /* Standard syntax */
+}
