@@ -89,3 +89,6 @@ input[type=datetime-local] {
 	font-size: 16pt !important;
 	color: black !important;
 }
+.hytte-header-container {
+	height: 80px;
+}
