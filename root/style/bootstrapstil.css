@@ -188,7 +188,7 @@ h2 {
 	border-radius: 0px;
 }
 .panel-group, .panel {
-	margin: 0;
+	margin: 0px !important;
 	border-radius: 0px !important;
 }
 .jumbotron {
@@ -199,9 +199,23 @@ h2 {
 }
 .col-md-8 {
 	padding: 0 !important;
-	overflow-x: hidden;
+	margin-bottom: 0px;
+}
+.row {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+	height: auto !important;
 }
 .list-group-item {
 	height: 100px;
 	padding-left: 10px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px #223300;
+}
+.list-group {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.list-group-item-heading {
+	padding-top: 14px !important;
 }
