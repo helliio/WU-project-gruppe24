@@ -89,3 +89,12 @@ input[type=datetime-local] {
 	font-size: 16pt !important;
 	color: black !important;
 }
+#omDiv{
+	font-size: 40px;
+}
+#aboutUs{
+font-size: 30px;
+margin-left: 300pt;
+margin-right: 300pt;
+
+}
