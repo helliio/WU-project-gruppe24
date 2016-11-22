@@ -197,3 +197,11 @@ h2 {
 	margin-bottom: 0;
 	border-radius: 0 !important;
 }
+.col-md-8 {
+	padding: 0 !important;
+	overflow-x: hidden;
+}
+.list-group-item {
+	height: 100px;
+	padding-left: 10px;
+}
