@@ -219,3 +219,7 @@ h2 {
 .list-group-item-heading {
 	padding-top: 14px !important;
 }
+.label {
+	float: right;
+	margin-right: 5px;
+}
