@@ -19,22 +19,10 @@
 	</header>
 
 	<main>
-		<span class="visible-xs">
-			<h2>Naviger siden</h2>
-		</span>
-		<span class="visible-sm">
-			<h2>Naviger siden</h2>
-		</span>
-		<span class="visible-md">
-			<h2>Naviger siden</h2>
-		</span>
-		<span class="visible-lg">
-			<h2>Naviger siden</h2>
-		</span>
+<!--
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<!-- Endre aria-label med JavaScript -->
 				<button aria-label="Lukk/åpne" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -53,121 +41,157 @@
 			</div>
 		</div>
 	</nav>
+-->
 
-	<section>
-		<div class="panel-group">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapse1">Våre anlegg</a>
-					</h4>
-				</div>
-				<div id="collapse1" class="panel-collapse collapse">
-					<div class="panel-body">Panel Body</div>
+<section>
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<a data-toggle="collapse" href="#collapse1">
+						<span class="visible-xs">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-sm">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-md">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-lg">
+							<h2>Meny</h2>
+						</span>
+					</a>
 				</div>
 			</div>
-		</div>
-		<div class="panel-group">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapse2">Collapsible panel</a>
-					</h4>
-				</div>
-				<div id="collapse2" class="panel-collapse collapse">
-					<div class="panel-body">Panel Body</div>
-				</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">Panel Body</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section>
+<div class="section-separator"></div>
+
+<section>
 	<div class="container-fluid kill-padding-margin">
-			<div class="row kill-padding-margin">
-				<div class="col-md-4">
-					<div class="bestillingsskjema">
-						<div class="split-wrapper widthfull">
-							<div class="tekst-venstre">Antall senger</div>
-							<div class="element-høyre">
-								<input type="range"/>
-							</div>
-						</div>
-						<div class="split-wrapper" id="roundbox">
-							<div class="tekst-venstre">Tilrettelegging for rullestol</div>
-							<div class="element-høyre">
-								<input type="checkbox"/>
-							</div>
-						</div>
-						<div class="split-wrapper" id="roundbox">
-							<div class="tekst-venstre">Innlagt vann</div>
-							<div class="element-høyre">
-								<input type="checkbox"/>
-							</div>
-						</div>
-						<div class="split-wrapper" id="roundbox">
-							<div class="tekst-venstre">Strøm</div>
-							<div class="element-høyre">
-								<input type="checkbox"/>
-							</div>
+		<div class="row kill-padding-margin">
+			<div class="col-md-4">
+				<form class="bestillingsskjema">
+
+					<div class="split-wrapper widthfull">
+						<div class="tekst-venstre">Fra dato/klokkeslett</div>
+						<div class="element-høyre">
+							<input type="datetime-local">
 						</div>
 					</div>
-
-				</div>
-				<div class="col-md-8">
-					<div class="list-group">
-						<a href="#" class="list-group-item">
-							<img src="images/hytte_ikon_1.png" class="hytteikon"/>
-							<h4 class="list-group-item-heading" style="padding-top: 14px;">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-						</a>
+					<div class="split-wrapper widthfull">
+						<div class="tekst-venstre">Til dato/klokkeslett</div>
+						<div class="element-høyre">
+							<input type="datetime-local">
+						</div>
 					</div>
+					<div class="split-wrapper widthfull">
+						<div class="tekst-venstre">Antall netter</div>
+						<div class="element-høyre">
+							<input type="range"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Tilrettelegging for rullestol</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Innlagt vann</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Strøm</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Svada</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Lorem ipsum</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+					<div class="split-wrapper" id="roundbox">
+						<div class="tekst-venstre">Svada svada</div>
+						<div class="element-høyre">
+							<input type="checkbox"/>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-8">
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+						<button class="btn btn-primary" type="button">Bestill hytte</button>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Liten hytte</h4>
+						<p class="list-group-item-text">1 soverom</p>
+					</a>
+				</div>
 
-				</div>
 			</div>
 		</div>
-	</section>
-	
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4">
-					<h3>Column 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-				</div>
-				<div class="col-sm-4">
-					<h3>Column 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-				</div>
-				<div class="col-sm-4">
-					<h3>Column 3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-				</div>
+	</div>
+</section>
+<div class="section-separator"></div>
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Column 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Column 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Column 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 </main>
 </body>
 </html>

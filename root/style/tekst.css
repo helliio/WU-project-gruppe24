@@ -9,14 +9,8 @@
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
-	height: auto;
+	min-height: 250px;
 	padding: 10px;
-	box-sizing: border-box;
-}
-input[type=text] {
-	width: 100%;
-	border: 1px solid #444;
-	padding: 5px;
 	box-sizing: border-box;
 }
 input[type=range] {
@@ -27,6 +21,21 @@ input[type=checkbox] {
 	width: 16px;
 	height: 16px;
 	margin-top: 8px;
+}
+input[type=datetime-local] {
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 5px !important;
+	background-color: transparent;
+	color: white;
+	padding: 5px;
+	box-sizing: border-box;
+	height: 30px;
+}
+.section-separator {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 .split-wrapper {
 	width: 100%;
@@ -56,4 +65,11 @@ input[type=checkbox] {
 	height: 30px;
 	color: #FFF;
 	overflow: hidden;
+}
+.panel-title a:hover, .panel-title h2:hover {
+	color: #8F0 !important;
+}
+.panel-title a, .panel-title h2 {
+	text-decoration: none !important;
+	color: #480 !important;
 }
