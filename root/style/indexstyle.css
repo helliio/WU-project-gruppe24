@@ -3,6 +3,7 @@ body, html {
 	margin: 0;
 	background-color: #470;
 	height: 100%;
+	overflow-x: hidden;
 }
 a, a:visited, a:hover {
 	color: inherit;
@@ -81,7 +82,6 @@ a, a:visited, a:hover {
 #accessibilitycontainer:hover {
 	background-color: #120;
 }
-
 #accessibilitytext {
 	font-size: 2.5vmin;
 	color: white !important;
