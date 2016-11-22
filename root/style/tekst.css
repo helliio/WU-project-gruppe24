@@ -92,3 +92,6 @@ input[type=datetime-local] {
 .hytte-header-container {
 	height: 80px;
 }
+hr {
+	margin-bottom: 0 !important;
+}
