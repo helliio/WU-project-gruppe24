@@ -209,6 +209,8 @@ h2 {
 .list-group-item {
 	height: 100px;
 	padding-left: 10px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px #223300;
 }
 .list-group {
 	padding: 0px !important;

@@ -66,12 +66,14 @@ input[type=datetime-local] {
 	color: #FFF;
 	overflow: hidden;
 }
-.panel-title a:hover, .panel-title h2:hover {
-	color: #8F0 !important;
+/*
+.panel-heading:hover a, .panel-heading:hover h2 {
+	color: #000 !important;
 }
+*/
 .panel-title a, .panel-title h2 {
 	text-decoration: none !important;
-	color: #480 !important;
+	color: #333 !important;
 }
 #bunnlink {
 	margin-left: 30%;
@@ -80,7 +82,7 @@ input[type=datetime-local] {
 	font-size: 16pt !important;
 	color: black !important;
 }
-#copyright{
+#copyright {
 	margin-left: 30%;
 	margin-right: 30%;
 	text-align: center;
