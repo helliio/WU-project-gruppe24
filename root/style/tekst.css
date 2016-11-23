@@ -1,4 +1,4 @@
-.hytteikon {
+﻿.hytteikon {
 	float: left;
 	width: 80px;
 	height: 80px;
@@ -124,4 +124,10 @@ margin-top: 30px;
 }
 .form1 input{
 	width: 100%;
+}
+.hytte-header-container {
+	height: 80px;
+}
+hr {
+	margin-bottom: 0 !important;
 }
