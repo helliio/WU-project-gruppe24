@@ -211,6 +211,7 @@ h2 {
 	padding-left: 10px;
 	margin: 10px;
 	box-shadow: 0px 0px 10px #223300;
+	overflow: hidden;
 }
 .list-group {
 	padding: 0px !important;
@@ -218,4 +219,11 @@ h2 {
 }
 .list-group-item-heading {
 	padding-top: 14px !important;
+}
+.label {
+	float: right;
+	margin-right: 5px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: 0px;
 }
