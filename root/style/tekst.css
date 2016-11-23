@@ -36,6 +36,11 @@ input[type=datetime-local] {
 	width: 100%;
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 20pt;
+	line-height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
 }
 .split-wrapper {
 	width: 100%;
@@ -88,6 +93,13 @@ input[type=datetime-local] {
 	text-align: center;
 	font-size: 16pt !important;
 	color: black !important;
+}
+#aboutUs{
+font-size: 14pt;
+margin: 0 auto;
+width: 500px;
+color: #fff;
+margin-top: 30px;
 }
 .hytte-header-container {
 	height: 80px;
