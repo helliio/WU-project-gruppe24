@@ -104,6 +104,9 @@ margin-top: 30px;
 .hytte-header-container {
 	height: 80px;
 }
+.hytte-header-container:hover img {
+	background-color: red;
+}
 hr {
 	margin-bottom: 0 !important;
 }
