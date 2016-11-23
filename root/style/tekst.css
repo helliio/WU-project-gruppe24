@@ -95,3 +95,6 @@ input[type=datetime-local] {
 hr {
 	margin-bottom: 0 !important;
 }
+.carousel-inner {
+	margin: 10px !important;
+}
