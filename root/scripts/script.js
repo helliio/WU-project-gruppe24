@@ -1,13 +1,16 @@
-$(".list-group-item").click(function() {
+$(".hytte-header-container").click(function() {
 	if($(this).hasClass("toggled")){
-		$(this).css({
+		$(this).closest('.list-group-item').css({
 			transition: 'height 0.4s ease-in-out',
 			"height": "100px"
-		}).removeClass("toggled")
+		})
+		$(this).removeClass("toggled")
 	}else{
-		$(this).css({
+		
+		$(this).closest('.list-group-item').css({
 			transition: 'height 0.4s ease-in-out',
 			"height": "500px"
-		}).addClass("toggled")
+		})
+		$(this).addClass("toggled")
 	}
 });
