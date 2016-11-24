@@ -116,9 +116,6 @@ hr {
 	font-size: 16pt !important;
 	color: black !important;
 }
-#darkBackground{
-	background-color: #370;
-}
 #aboutUs {
 font-size: 14pt;
 margin: 0 auto;
@@ -151,6 +148,20 @@ margin-top: 30px;
 	font-size: 10pt !important;
 	margin-top: 5px;
 	margin-bottom: 10px;
+}
+.bekreftelse {
+	font-size: 10pt;
+	margin: 0 auto;
+	width:400px;
+	padding-top: 30px;
+	color: #fff;
+}
+.bekreftelse input {
+	width: 100%;
+	color: #000;
+	font-size: 10pt !important;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 #sporsmal{
 	min-width: 100%;
@@ -188,6 +199,17 @@ hr {
 }
 #stikkord {
 	display: none;
+}
+#copyright {
+	background-color: #370;
+	margin: 0 auto;
+	padding-top: 55px;
+	font-size: 9pt !important;
+	color: white !important;
+	padding-bottom: 15px;
+}
+#copyright a {
+	color: white;
 }
 .btn-filtrer:hover {
 	cursor: pointer;
