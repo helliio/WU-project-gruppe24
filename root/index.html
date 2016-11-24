@@ -10,12 +10,13 @@
 	<link REL="stylesheet" type="text/css" href="style/tekst.css">
 	<link REL="stylesheet" type="text/css" href="style/bootstrapstil.css">
 	<title>Fjell & Fjord: Hytteutleie For Alle</title>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
 </head>
 
 <body>
 
 	<header class="jumbotron text-center">
-		<h1>Fjell og Fjord</h1>
+		<h1 class="logo">Fjell og Fjord</h1>
 		<p>Hytteutleie for alle!</p>
 	</header>
 	<main>
@@ -53,9 +54,12 @@
 				</div>
 			</div>
 			<div id="collapse1" class="panel-collapse collapse">
-				<div class="panel-body">Panel Body</div>
-				<div class="panel-body">Panel Body</div>
-				<div class="panel-body">Panel Body</div>
+				<a href="http://www.google.no"><div class="panel-body">Startside</div></a>
+				<hr>
+				<a href="http://www.google.no"><div class="panel-body">Om oss</div></a>
+				<hr>
+				<a href="http://www.google.no"><div class="panel-body">Kontakt oss</div></a>
+				<hr>
 			</div>
 		</div>
 	</div>
@@ -129,7 +133,7 @@
 					<div class="col-sm-8">
 						<div class="list-group">
 							<div class="list-group-item">
-								<div id="stikkord">RULLESTOL STROM</div>
+								<div id="stikkord">RULLESTOL</div>
 								<div class="hytte-header-container">
 									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
 									<h4 class="list-group-item-heading">Liten hytte</h4>
@@ -138,7 +142,6 @@
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
 									<span class="label label-primary">WC</span>
-									<span class="label label-primary">Strøm</span>
 									<span class="label label-success">Økonomi</span>
 									<span class="label label-info">Handicap</span>
 								</div>
@@ -147,13 +150,13 @@
 								<center>
 									<div class="thumbnail-container">
 									    <div class="thumbnail">
-									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
+									      <img src="images/hytter/ute/cropped/hytte1.jpg" alt="Innsiden av hytten">
 									    </div>
 									    <div class="thumbnail" style="margin: 0 auto;">
 									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
 									    </div>
 									    <div class="thumbnail">
-									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
+									      <img src="images/hytter/inne/cropped/hytte2.jpg" alt="Innsiden av hytten">
 									    </div>
 									</div>
 								</center>
@@ -162,6 +165,49 @@
 										<div class="hyttebeskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac pulvinar dolor. Suspendisse ac leo pretium, dictum neque a, pellentesque orci.</div>
 									</div>
 									<div class="col-md-4" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Innlagt vann og WC</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div id="stikkord">STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Medium hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">WC</span>
+									<span class="label label-primary">Strøm</span>
+								</div>
+								<hr/>
+								<div>
+									<div class="thumbnail-container">
+									    <div class="thumbnail">
+									      <img src="images/hytter/ute/cropped/hytte2.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte3.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte4.jpg" alt="Innsiden av hytten">
+									    </div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
@@ -177,50 +223,201 @@
 								</div>
 							</div>
 							<div class="list-group-item">
-								<div id="stikkord">test123</div>
-								<h4 class="list-group-item-heading">Liten hytte</h4>
-								<p class="list-group-item-text">1 soverom</p>
-								<span class="label label-default">Default</span>
-								<span class="label label-primary">Primary</span>
-								<span class="label label-success">Success</span>
-								<span class="label label-info">Info</span>
+								<div id="stikkord">RULLESTOL STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Stor hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">Strøm</span>
+									<span class="label label-success">Økonomi</span>
+									<span class="label label-info">Handicap</span>
+								</div>
 								<hr/>
-								<button class="btn btn-primary" type="button">Bestill hytte</button>
+								<div>
+									<div class="thumbnail-container">
+									    <div class="thumbnail">
+									      <img src="images/hytter/ute/cropped/hytte3.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte5.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte6.jpg" alt="Innsiden av hytten">
+									    </div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Strøm</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
 							</div>
 							<div class="list-group-item">
-								<h4 class="list-group-item-heading">Liten hytte</h4>
-								<p class="list-group-item-text">1 soverom</p>
+								<div id="stikkord">STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Medium hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">WC</span>
+									<span class="label label-primary">Strøm</span>
+								</div>
+								<hr/>
+								<div>
+									<div class="thumbnail-container">
+									    <div class="thumbnail">
+									      <img src="images/hytter/ute/cropped/hytte4.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte7.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte8.jpg" alt="Innsiden av hytten">
+									    </div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Strøm</div>
+											<div>Innlagt vann og WC</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
 							</div>
 							<div class="list-group-item">
-								<h4 class="list-group-item-heading">Liten hytte</h4>
-								<p class="list-group-item-text">1 soverom</p>
+								<div id="stikkord">RULLESTOL STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Liten hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">WC</span>
+									<span class="label label-primary">Strøm</span>
+									<span class="label label-success">Økonomi</span>
+									<span class="label label-info">Handicap</span>
+								</div>
+								<hr/>
+								<div>
+									<div class="thumbnail-container">
+									    <div class="thumbnail">
+									      <img src="images/hytter/ute/cropped/hytte5.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte9.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte10.jpg" alt="Innsiden av hytten">
+									    </div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Strøm</div>
+											<div>Innlagt vann og WC</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
 							</div>
 							<div class="list-group-item">
-								<h4 class="list-group-item-heading">Liten hytte</h4>
-								<p class="list-group-item-text">1 soverom</p>
-							</div>
-							<div class="list-group-item">
-								<h4 class="list-group-item-heading">Liten hytte</h4>
-								<p class="list-group-item-text">1 soverom</p>
+								<div id="stikkord">STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Stor hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">WC</span>
+									<span class="label label-primary">Strøm</span>
+									<span class="label label-success">Økonomi</span>
+								</div>
+								<hr/>
+								<div>
+									<div class="thumbnail-container">
+									    <div class="thumbnail">
+									      <img src="images/hytter/ute/cropped/hytte6.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte11.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte12.jpg" alt="Innsiden av hytten">
+									    </div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Strøm</div>
+											<div>Innlagt vann og WC</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<script src="scripts/slideshow.js"></script>
-			<div class="section-separator" id="margin-top-10"></div>
-			<section>
-				<input type="text">
-			</section>
+			</div>
+		</div>
+	</section>
+	<script src="scripts/slideshow.js"></script>
+	<div class="section-separator" id="margin-top-10"></div>
 
 
 	<div class="aboutUsBackground">
-	<div id="copyright">
-		<a href="http://www.google.no">Startside</a><br>
-		<a href="Stien til About us">Om oss</a><br>
-	 	<a href="Sti til Contact Us">Kontakt oss</a><br>
-	Copyright © Team 24 (Working Title)
-	</div>
+		<div id="copyright">
+			<a href="http://www.google.no">Startside</a><br>
+			<a href="Stien til About us">Om oss</a><br>
+		 	<a href="Sti til Contact Us">Kontakt oss</a><br>
+		  <p id="team24">Copyright © Team 24 (Working Title)</p>
+		</div>
 
 </main>
 <script src="scripts/script.js"></script>
