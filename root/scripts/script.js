@@ -21,7 +21,8 @@ $(".hytte-header-container").click(function() {
 	}
 });
 
-$('.thumbnail').click(function () {
-	$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+$('.thumbnail').click(function() {
+	var img = $(this).find('img').attr('src').replace("cropped/","")
+	$('.imagepreview').attr('src', img);
 	$('#imagemodal').modal('show');
 });
