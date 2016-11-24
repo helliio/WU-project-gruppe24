@@ -17,6 +17,9 @@
 	background-color: red;
 }
 */
+.logo {
+	text-align: center;
+}
 .bestillingsskjema {
 	width: 100%;
 	max-width: auto;
@@ -136,9 +139,10 @@ hr {
 #aboutUs {
 font-size: 14pt;
 margin: 0 auto;
-width: 500px;
+max-width: 500px;
+width: 100%;
 color: #fff;
-margin-top: 30px;
+padding: 20px;
 }
 .hytte-header-container {
 	height: 80px;
@@ -170,7 +174,7 @@ margin-top: 30px;
 	font-size: 10pt;
 	margin: 0 auto;
 	width:400px;
-	padding-top: 30px;
+	padding-bottom: 30px !important;
 	color: #fff;
 }
 .bekreftelse input {
@@ -188,11 +192,9 @@ margin-top: 30px;
 	color: #000;
 	margin-top: 5px;
 }
-#submit{
+#sendInn{
 	color: #fff;
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 20px;
 	background-color: transparent !important;
 	border: 1px solid white;
 	border-radius: 5px !important;
@@ -228,10 +230,13 @@ hr {
 #copyright {
 	background-color: #370;
 	margin: 0 auto;
-	padding-top: 55px;
+	padding-top: 30px;
 	font-size: 9pt !important;
 	color: white !important;
 	padding-bottom: 15px;
+}
+#team24 {
+	margin-top: 10px !important;
 }
 #copyright a {
 	color: white;
@@ -267,4 +272,15 @@ hr {
 .thumbnail:hover {
 	opacity: 0.7;
 	cursor: pointer;
+}
+h1 {
+	text-align: left;
+	color: white;
+	font-size: 7vw;
+}
+#kontakt-header {
+	font-size: 5vw;
+}
+#bekreftelse-header {
+	font-size: 5vw;
 }
