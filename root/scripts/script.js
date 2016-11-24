@@ -20,3 +20,10 @@ $(".hytte-header-container").click(function() {
 		$(this).addClass("toggled")
 	}
 });
+
+$(function() {
+		$('.thumbnail').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+});
