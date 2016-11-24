@@ -251,7 +251,3 @@ hr {
 	float: right;
 	margin-left: 10px;
 }
-.thumbnail:hover {
-	opacity: 0.7;
-	cursor: pointer;
-}
