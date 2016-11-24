@@ -5,11 +5,24 @@
 	display: inline-block;
 	margin-right: 10px;
 }
+/*
 .bestillingsskjema {
 	width: 100%;
-	max-width: 600px;
+	max-width: auto;
 	margin: 0 auto;
 	min-height: 250px;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: red;
+}
+*/
+.bestillingsskjema {
+	width: 100%;
+	max-width: auto;
+	margin: 0 auto;
+	height: auto;
+	display: inline-block;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -38,7 +51,7 @@ input[type=datetime-local] {
   width: 50px;
 	top: 25px;
 	left: calc(50% - 25px);
-	margin: 0 auto; 
+	margin: 0 auto;
 	opacity: 0.7;
 }
 .section-separator {
@@ -80,6 +93,10 @@ input[type=datetime-local] {
 	color: #FFF;
 	overflow: hidden;
 }
+hr {
+	border-color: rgba(0, 0, 0, 0.2);
+	margin-bottom: 0 !important;
+}
 /*
 .panel-heading:hover a, .panel-heading:hover h2 {
 	color: #000 !important;
@@ -88,6 +105,11 @@ input[type=datetime-local] {
 .panel-title a, .panel-title h2 {
 	text-decoration: none !important;
 	color: #333 !important;
+}
+.thumbnail-container {
+	margin-top: 10px;
+	display: inline-flex;
+	margin-bottom: 10px;
 }
 #bunnlink {
 	margin-left: 30%;
@@ -117,6 +139,12 @@ input[type=datetime-local] {
 }
 #darkBackground{
 	background-color: #370;
+#aboutUs {
+font-size: 14pt;
+margin: 0 auto;
+width: 500px;
+color: #fff;
+margin-top: 30px;
 }
 .hytte-header-container {
 	height: 80px;
@@ -124,15 +152,13 @@ input[type=datetime-local] {
 .hytte-header-container:hover img {
 	opacity: 1 !important;
 }
-hr {
-	margin-bottom: 0 !important;
-}
 .carousel-inner {
 	margin: 10px !important;
 }
 #margin-top-10 {
 	margin-top: 10px;
 }
+<<<<<<< HEAD
 .form1{
 	font-size: 10pt;
 	margin: 0 auto;
@@ -170,3 +196,23 @@ hr {
 hr {
 	margin-bottom: 0 !important;
 }
+=======
+.btn-filtrer {
+	height: 30px;
+	width: 200px !important;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+	clear: both;
+	margin-left: 10px; border-width: 2px;
+}
+#stikkord {
+	display: none;
+}
+.btn-filtrer:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+>>>>>>> refs/remotes/origin/Magnus
