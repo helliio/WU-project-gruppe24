@@ -77,9 +77,8 @@
 <section>
 	<div class="container-fluid kill-padding-margin">
 		<div class="row kill-padding-margin">
-			<div class="col-md-4">
-				<form class="bestillingsskjema">
-
+			<div class="col-sm-4">
+				<div class="bestillingsskjema">
 					<div class="split-wrapper widthfull">
 						<div class="tekst-venstre">Fra dato/klokkeslett</div>
 						<div class="element-høyre">
@@ -135,31 +134,58 @@
 							<input type="checkbox"/>
 						</div>
 					</div>
-				</form>
+					<input type="hidden" id="spesifikasjoner" value="test123" readonly="true"/>
+				</div>
+				<div class="btn-filtrer" id="roundbox">Finn</div>
 			</div>
-			<div class="col-md-8">
+
+			<div class="col-sm-8">
 				<div class="list-group">
 					<div class="list-group-item">
+						<div id="stikkord">test123</div>
 						<div class="hytte-header-container">
 							<img src="images/hytte_ikon_1.png" class="hytteikon"/>
 							<h4 class="list-group-item-heading">Liten hytte</h4>
 							<p class="list-group-item-text">1 soverom</p>
-							<span class="visible-md visible-lg">
+							<span class="visible-md visible-lg hytte-toggle-arrow">
 								<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 							</span>
 
 
-							<span class="label label-default">Default</span>
-							<span class="label label-primary">Primary</span>
-							<span class="label label-success">Success</span>
-							<span class="label label-info">Info</span>
+
+							<span class="label label-primary">WC</span>
+							<span class="label label-primary">Strøm</span>
+							<span class="label label-success">Økonomi</span>
+							<span class="label label-info">Handicap</span>
 						</div>
 						<hr/>
-						
+						<div>
+								<div class="thumbnail-container">
+									    <a href="#" class="thumbnail">
+									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+									    </a>
+									    <a href="#" class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+									    </a>
+									    <a href="#" class="thumbnail">
+									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+									    </a>
+								</div>
+								
+
+								<div class="col-md-6" style="">
+									<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+								</div>
+								<div class="col-md-6" style="">
+									<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+								</div>
+
 
 						<button class="btn btn-primary" type="button">Bestill hytte</button>
+						</div>
 					</div>
 					<div class="list-group-item">
+						<div id="stikkord">test123</div>
 						<h4 class="list-group-item-heading">Liten hytte</h4>
 						<p class="list-group-item-text">1 soverom</p>
 						<span class="label label-default">Default</span>
@@ -189,6 +215,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="scripts/slideshow.js"></script>
 	<div class="section-separator" id="margin-top-10"></div>
 	<section>
 		<input type="text">
@@ -223,5 +250,6 @@
 	</section>
 </main>
 <script src="scripts/script.js"></script>
+<script src="scripts/filter.js"></script>
 </body>
 </html>
