@@ -9,17 +9,35 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.fasiliteter-liste div {
+		display: inline-block;
+		float: left;
+		width: auto;
+		margin-left: 10px;
+	}
 }
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+	.fasiliteter-liste div {
+		display: inline-block;
+		float: left;
+		width: auto;
+		margin-left: 10px;
+	}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 	.btn {
 		width: 100%;
+		margin-bottom: 10px;
+	}
+	.bestillingsknapper {
+		bottom: 0px;
+		width: 100%;
+		padding: 10px;
+		margin-right: 0px;
 	}
 }
 

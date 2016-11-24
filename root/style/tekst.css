@@ -17,6 +17,9 @@
 	background-color: red;
 }
 */
+.logo {
+	text-align: center;
+}
 .bestillingsskjema {
 	width: 100%;
 	max-width: auto;
@@ -33,7 +36,7 @@ input[type=range] {
 input[type=checkbox] {
 	width: 16px;
 	height: 16px;
-	margin-top: 8px;
+	margin-top: 8px !important;
 }
 input[type=datetime-local] {
 	width: 100%;
@@ -79,10 +82,14 @@ input[type=datetime-local] {
 	padding-right: 10px;
 	float: left;
 }
-.element-høyre {
+.element-hoyre {
 	height: 30px;
 	color: #FFF;
 	overflow: hidden;
+}
+#roundbox .element-hoyre {
+	width: 16px;
+	float: left;
 }
 hr {
 	border-color: rgba(0, 0, 0, 0.2);
@@ -98,9 +105,8 @@ hr {
 	color: #333 !important;
 }
 .thumbnail-container {
-	margin-top: 10px;
 	display: inline-flex;
-	margin-bottom: 10px;
+	margin: 10px auto !important;
 }
 .fasiliteter-liste {
 	margin-top: 10px;
@@ -136,9 +142,10 @@ hr {
 #aboutUs {
 font-size: 14pt;
 margin: 0 auto;
-width: 500px;
+max-width: 500px;
+width: 100%;
 color: #fff;
-margin-top: 30px;
+padding: 20px;
 }
 .hytte-header-container {
 	height: 80px;
@@ -152,14 +159,14 @@ margin-top: 30px;
 #margin-top-10 {
 	margin-top: 10px;
 }
-.form1{
+.kontaktskjema {
 	font-size: 10pt;
 	margin: 0 auto;
 	width:400px;
 	margin-top: 30px;
 	color: #fff;
 }
-.form1 input {
+.kontaktskjema input {
 	width: 100%;
 	color: #000;
 	font-size: 10pt !important;
@@ -170,7 +177,7 @@ margin-top: 30px;
 	font-size: 10pt;
 	margin: 0 auto;
 	width:400px;
-	padding-top: 30px;
+	padding-bottom: 30px !important;
 	color: #fff;
 }
 .bekreftelse input {
@@ -180,7 +187,7 @@ margin-top: 30px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
-#sporsmal{
+#sporsmal {
 	min-width: 100%;
 	max-width: 100%;
 	height: 100px;
@@ -188,11 +195,9 @@ margin-top: 30px;
 	color: #000;
 	margin-top: 5px;
 }
-#submit{
+#sendInn {
 	color: #fff;
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 20px;
 	background-color: transparent !important;
 	border: 1px solid white;
 	border-radius: 5px !important;
@@ -228,10 +233,13 @@ hr {
 #copyright {
 	background-color: #370;
 	margin: 0 auto;
-	padding-top: 55px;
+	padding-top: 30px;
 	font-size: 9pt !important;
 	color: white !important;
 	padding-bottom: 15px;
+}
+#team24 {
+	margin-top: 10px !important;
 }
 #copyright a {
 	color: white;
@@ -254,17 +262,33 @@ hr {
 	color: white !important
 }
 .bestillingsknapper {
-	width: 100%;
-	height: auto;
-	display: inline-block;
+	width: auto;
+	float: right !important;
+	position: absolute;
 	margin-top: 10px;
+	bottom: 10px;
+	margin-right: 10px;
+	right: 0;
+	opacity: 0;
+	display: none;
 }
 .bestillingsknapper .btn {
-	margin-top: 10px;
+	display: inline-block;
 	float: right;
 	margin-left: 10px;
 }
 .thumbnail:hover {
 	opacity: 0.7;
 	cursor: pointer;
+}
+h1 {
+	text-align: left;
+	color: white;
+	font-size: 7vw;
+}
+#kontakt-header {
+	font-size: 5vw;
+}
+#bekreftelse-header {
+	font-size: 5vw;
 }
