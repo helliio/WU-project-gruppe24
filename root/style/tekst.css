@@ -17,6 +17,9 @@
 	background-color: red;
 }
 */
+.logo {
+	text-align: center;
+}
 .bestillingsskjema {
 	width: 100%;
 	max-width: auto;
@@ -171,7 +174,7 @@ padding: 20px;
 	font-size: 10pt;
 	margin: 0 auto;
 	width:400px;
-	padding-top: 10px;
+	padding-bottom: 30px !important;
 	color: #fff;
 }
 .bekreftelse input {
@@ -189,11 +192,9 @@ padding: 20px;
 	color: #000;
 	margin-top: 5px;
 }
-#submit{
+#sendInn{
 	color: #fff;
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 20px;
 	background-color: transparent !important;
 	border: 1px solid white;
 	border-radius: 5px !important;
@@ -271,4 +272,9 @@ hr {
 .thumbnail:hover {
 	opacity: 0.7;
 	cursor: pointer;
+}
+h1 {
+	text-align: left;
+	color: white;
+	font-size: 7vw;
 }
