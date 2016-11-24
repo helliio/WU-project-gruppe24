@@ -223,3 +223,8 @@ hr {
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
 }
+.bekreftelse input[type=radio] {
+	width: 50px !important;
+	margin: 0 auto;
+
+}
