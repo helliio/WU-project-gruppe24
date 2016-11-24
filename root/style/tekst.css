@@ -226,5 +226,13 @@ hr {
 .bekreftelse input[type=radio] {
 	width: 50px !important;
 	margin: 0 auto;
-
+}
+#collapse1 {
+	background-color: #370;
+	color: white !important;
+	font-size: 10pt;
+	text-align: center;
+}
+#collapse1 a {
+	color: white !important
 }
