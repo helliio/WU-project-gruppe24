@@ -20,11 +20,38 @@
 
 	<main>
 <div class="section-separator">
-	Om oss!
+Bekreft bestilling
 </div>
-<div class="aboutUsBackground">
-<p id="aboutUs">Vi er Fjell og Fjord AS, Lorem ipsum dolor sit amet, consectetur adipisicing elit, seds do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
-</div>
+
+<form class="bekreftelse">
+Fornavn og etternavn:
+<br>
+<input type="text" id="navn"name="navn" required="true">
+<br>
+E-post adresse:
+<br>
+<input type="email" id="epost" name="epost" min="0">
+<br>
+Telefonnummer:
+<br>
+<input type="text" id="tlf" name="tlf" required="true">
+<br>
+Adresse:
+<br>
+<input type="text" id="adresse" name="adresse" required="true">
+<br>
+<input type="checkbox" name="Vask" value="vask">Ønsker du at vi vasker hytten etter bruk?
+<br>
+<input type="checkbox" name="turistforening" value="turistforening">Er du medlem av turistforeningen?(15% rabatt)
+<br>
+Ekstra kommentarer:
+<br>
+<textarea id="ekstraKommentar" name="sporsmal" form="usrform"></textarea>
+<br><br>
+<button type="submit" id="submit">Bekreft bestilling</button>
+</form>
+
+</section>
 
 <div id="copyright">
 	<a href="http://www.google.no">Startside</a><br>
@@ -32,8 +59,6 @@
  	<a href="Sti til Contact Us">Kontakt oss</a><br>
 Copyright © Team 24 (Working Title)
 </div>
-
-</section>
 
 	</section>
 </main>
