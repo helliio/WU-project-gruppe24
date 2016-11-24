@@ -136,9 +136,10 @@ hr {
 #aboutUs {
 font-size: 14pt;
 margin: 0 auto;
-width: 500px;
+max-width: 500px;
+width: 100%;
 color: #fff;
-margin-top: 30px;
+padding: 20px;
 }
 .hytte-header-container {
 	height: 80px;
@@ -170,7 +171,7 @@ margin-top: 30px;
 	font-size: 10pt;
 	margin: 0 auto;
 	width:400px;
-	padding-top: 30px;
+	padding-top: 10px;
 	color: #fff;
 }
 .bekreftelse input {
@@ -228,10 +229,13 @@ hr {
 #copyright {
 	background-color: #370;
 	margin: 0 auto;
-	padding-top: 55px;
+	padding-top: 30px;
 	font-size: 9pt !important;
 	color: white !important;
 	padding-bottom: 15px;
+}
+#team24 {
+	margin-top: 10px !important;
 }
 #copyright a {
 	color: white;
