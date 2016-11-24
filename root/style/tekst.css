@@ -98,9 +98,8 @@ hr {
 	color: #333 !important;
 }
 .thumbnail-container {
-	margin-top: 10px;
 	display: inline-flex;
-	margin-bottom: 10px;
+	margin: 10px auto !important;
 }
 .fasiliteter-liste {
 	margin-top: 10px;
@@ -242,12 +241,15 @@ hr {
 }
 .bestillingsknapper {
 	width: 100%;
-	height: auto;
+	height: 34px;
 	display: inline-block;
+	position: absolute;
 	margin-top: 10px;
+	bottom: 10px;
+	left: -10px;
 }
 .bestillingsknapper .btn {
-	margin-top: 10px;
+	display: inline-block;
 	float: right;
 	margin-left: 10px;
 }
