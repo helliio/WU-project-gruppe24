@@ -1,4 +1,4 @@
-.hytteikon {
+﻿.hytteikon {
 	float: left;
 	width: 80px;
 	height: 80px;
@@ -152,6 +152,57 @@ margin-top: 30px;
 #margin-top-10 {
 	margin-top: 10px;
 }
+.form1{
+	font-size: 10pt;
+	margin: 0 auto;
+	width:400px;
+	margin-top: 30px;
+	color: #fff;
+}
+.form1 input {
+	width: 100%;
+	color: #000;
+	font-size: 10pt !important;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.bekreftelse {
+	font-size: 10pt;
+	margin: 0 auto;
+	width:400px;
+	padding-top: 30px;
+	color: #fff;
+}
+.bekreftelse input {
+	width: 100%;
+	color: #000;
+	font-size: 10pt !important;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#sporsmal{
+	min-width: 100%;
+	max-width: 100%;
+	height: 100px;
+	font-size: 10pt;
+	color: #000;
+	margin-top: 5px;
+}
+#submit{
+	color: #fff;
+	width: 100%;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	background-color: transparent !important;
+	border: 1px solid white;
+	border-radius: 5px !important;
+}
+.hytte-header-container {
+	height: 80px;
+}
+hr {
+	margin-bottom: 0 !important;
+}
 .btn-filtrer {
 	height: 30px;
 	width: 200px !important;
@@ -165,6 +216,25 @@ margin-top: 30px;
 }
 #stikkord {
 	display: none;
+}
+#ekstraKommentar {
+	min-width: 100%;
+	max-width: 100%;
+	height: 50px;
+	font-size: 10pt;
+	color: #000;
+	margin-top: 5px;
+}
+#copyright {
+	background-color: #370;
+	margin: 0 auto;
+	padding-top: 55px;
+	font-size: 9pt !important;
+	color: white !important;
+	padding-bottom: 15px;
+}
+#copyright a {
+	color: white;
 }
 .btn-filtrer:hover {
 	cursor: pointer;
@@ -180,4 +250,8 @@ margin-top: 30px;
 	margin-top: 10px;
 	float: right;
 	margin-left: 10px;
+}
+.thumbnail:hover {
+	opacity: 0.7;
+	cursor: pointer;
 }

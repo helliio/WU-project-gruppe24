@@ -19,34 +19,45 @@
 		<p>Hytteutleie for alle!</p>
 	</header>
 	<main>
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<img src="" class="imagepreview" style="width: 100%;">
+			</div>
+		</div>
+	</div>
+</div>
 
-		<section>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">
-							<a data-toggle="collapse" href="#collapse1">
-								<span class="visible-xs">
-									<h2>Meny</h2>
-								</span>
-								<span class="visible-sm">
-									<h2>Meny</h2>
-								</span>
-								<span class="visible-md">
-									<h2>Meny</h2>
-								</span>
-								<span class="visible-lg">
-									<h2>Meny</h2>
-								</span>
-							</a>
-						</div>
-					</div>
-					<div id="collapse1" class="panel-collapse collapse">
-						<div class="panel-body">Panel Body</div>
-					</div>
+<section>
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<a data-toggle="collapse" href="#collapse1">
+						<span class="visible-xs">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-sm">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-md">
+							<h2>Meny</h2>
+						</span>
+						<span class="visible-lg">
+							<h2>Meny</h2>
+						</span>
+					</a>
 				</div>
 			</div>
-		</section>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">Panel Body</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 		<div class="section-separator"></div>
 
@@ -61,7 +72,6 @@
 									<input type="datetime-local">
 								</div>
 							</div>
-
 							<div class="split-wrapper widthfull">
 								<div class="tekst-venstre">Til dato/klokkeslett</div>
 								<div class="element-høyre">
@@ -134,15 +144,15 @@
 								<hr/>
 								<div>
 									<div class="thumbnail-container">
-										<a href="#" class="thumbnail">
-											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-										</a>
-										<a href="#" class="thumbnail" style="margin: 0 auto;">
-											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-										</a>
-										<a href="#" class="thumbnail">
-											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-										</a>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail" style="margin: 0 auto;">
+									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
+									    </div>
+									    <div class="thumbnail">
+									      <img src="images/hytter/inne/cropped/hytte1.jpg" alt="Innsiden av hytten">
+									    </div>
 									</div>
 									<div class="col-md-6" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
@@ -201,34 +211,16 @@
 			</section>
 
 
+	<div class="aboutUsBackground">
+	<div id="copyright">
+		<a href="http://www.google.no">Startside</a><br>
+		<a href="Stien til About us">Om oss</a><br>
+	 	<a href="Sti til Contact Us">Kontakt oss</a><br>
+	Copyright © Team 24 (Working Title)
+	</div>
 
-
-			<section>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Column 1</h3>
-							<a href="www.google.com" id="bunnlink"> Kakeform</a>
-							<a href="www.mindwars.no" id="bunnlink"> Påskeegg</a>
-						</div>
-						<div class="col-sm-4">
-							<h3>Lenker</h3>
-							<a href="www.google.no" id="bunnlink"> Om oss</a>
-							<br>
-							<a href="www.google.se" id="bunnlink"> Something else</a>
-						</div>
-						<div class="col-sm-4">
-							<h3>Column 3</h3>
-							<a href="www.google.dk" id="bunnlink"> Something</a>
-							<br>
-							<a href="www.google.bo" id="bunnlink"> Eplekake</a>
-							<p id="copyright"> MUCH COPYRIGHT, NO TOUCH, WOW, MINE, NO USE, NO GET PROFIT OFF </p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<script src="scripts/script.js"></script>
-		<script src="scripts/filter.js"></script>
-	</body>
-	</html>
+</main>
+<script src="scripts/script.js"></script>
+<script src="scripts/filter.js"></script>
+</body>
+</html>
