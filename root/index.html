@@ -18,238 +18,217 @@
 		<h1>Fjell og Fjord</h1>
 		<p>Hytteutleie for alle!</p>
 	</header>
-
 	<main>
-<!--
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button aria-label="Lukk/åpne" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<span class="navbar-brand" href="#">Hopp til</span>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Informasjon</a></li>
-					<li><a href="#">Bestillingsskjema</a></li>
-					<li><a href="#">Innstillinger for sidevisning</a></li>
-					<li><a href="#">Forsiden</a></li>
-				</ul>
 
-			</div>
-		</div>
-	</nav>
--->
-
-<section>
-	<div class="panel-group">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a data-toggle="collapse" href="#collapse1">
-						<span class="visible-xs">
-							<h2>Meny</h2>
-						</span>
-						<span class="visible-sm">
-							<h2>Meny</h2>
-						</span>
-						<span class="visible-md">
-							<h2>Meny</h2>
-						</span>
-						<span class="visible-lg">
-							<h2>Meny</h2>
-						</span>
-					</a>
+		<section>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a data-toggle="collapse" href="#collapse1">
+								<span class="visible-xs">
+									<h2>Meny</h2>
+								</span>
+								<span class="visible-sm">
+									<h2>Meny</h2>
+								</span>
+								<span class="visible-md">
+									<h2>Meny</h2>
+								</span>
+								<span class="visible-lg">
+									<h2>Meny</h2>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+						<div class="panel-body">Panel Body</div>
+					</div>
 				</div>
 			</div>
-			<div id="collapse1" class="panel-collapse collapse">
-				<div class="panel-body">Panel Body</div>
-			</div>
-		</div>
-	</div>
-</section>
+		</section>
 
-<div class="section-separator"></div>
+		<div class="section-separator"></div>
 
-<section>
-	<div class="container-fluid kill-padding-margin">
-		<div class="row kill-padding-margin">
-			<div class="col-sm-4">
-				<div class="bestillingsskjema">
-					<div class="split-wrapper widthfull">
-						<div class="tekst-venstre">Fra dato/klokkeslett</div>
-						<div class="element-høyre">
-							<input type="datetime-local">
-						</div>
-					</div>
-
-					<div class="split-wrapper widthfull">
-						<div class="tekst-venstre">Til dato/klokkeslett</div>
-						<div class="element-høyre">
-							<input type="datetime-local">
-						</div>
-					</div>
-					<div class="split-wrapper widthfull">
-						<div class="tekst-venstre">Antall netter</div>
-						<div class="element-høyre">
-							<input type="range"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Tilrettelegging for rullestol</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Innlagt vann</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Strøm</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Svada</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Lorem ipsum</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<div class="split-wrapper" id="roundbox">
-						<div class="tekst-venstre">Svada svada</div>
-						<div class="element-høyre">
-							<input type="checkbox"/>
-						</div>
-					</div>
-					<input type="hidden" id="spesifikasjoner" value="test123" readonly="true"/>
-				</div>
-				<div class="btn-filtrer" id="roundbox">Finn</div>
-			</div>
-
-			<div class="col-sm-8">
-				<div class="list-group">
-					<div class="list-group-item">
-						<div id="stikkord">test123</div>
-						<div class="hytte-header-container">
-							<img src="images/hytte_ikon_1.png" class="hytteikon"/>
-							<h4 class="list-group-item-heading">Liten hytte</h4>
-							<p class="list-group-item-text">1 soverom</p>
-							<span class="visible-md visible-lg hytte-toggle-arrow">
-								<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
-							</span>
-
-
-
-							<span class="label label-primary">WC</span>
-							<span class="label label-primary">Strøm</span>
-							<span class="label label-success">Økonomi</span>
-							<span class="label label-info">Handicap</span>
-						</div>
-						<hr/>
-						<div>
-								<div class="thumbnail-container">
-									    <a href="#" class="thumbnail">
-									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-									    </a>
-									    <a href="#" class="thumbnail" style="margin: 0 auto;">
-									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-									    </a>
-									    <a href="#" class="thumbnail">
-									      <img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
-									    </a>
+		<section>
+			<div class="container-fluid kill-padding-margin">
+				<div class="row kill-padding-margin">
+					<div class="col-sm-4">
+						<div class="bestillingsskjema">
+							<div class="split-wrapper widthfull">
+								<div class="tekst-venstre">Fra dato/klokkeslett</div>
+								<div class="element-høyre">
+									<input type="datetime-local">
 								</div>
-								
+							</div>
 
-								<div class="col-md-6" style="">
-									<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+							<div class="split-wrapper widthfull">
+								<div class="tekst-venstre">Til dato/klokkeslett</div>
+								<div class="element-høyre">
+									<input type="datetime-local">
 								</div>
-								<div class="col-md-6" style="">
-									<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+							</div>
+							<div class="split-wrapper widthfull">
+								<div class="tekst-venstre">Antall netter</div>
+								<div class="element-høyre">
+									<input type="range"/>
 								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Tilrettelegging for rullestol</div>
+								<div class="element-høyre">
+									<input type="checkbox" class="check" id="check-rullestol"/>
+								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Innlagt vann</div>
+								<div class="element-høyre">
+									<input type="checkbox" class="check" id="check-vann"/>
+								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Strøm</div>
+								<div class="element-høyre">
+									<input type="checkbox" class="check" id="check-strom"/>
+								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Svada</div>
+								<div class="element-høyre">
+									<input type="checkbox" class="check" id="check-strom"/>
+								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Lorem ipsum</div>
+								<div class="element-høyre">
+									<input type="checkbox"/>
+								</div>
+							</div>
+							<div class="split-wrapper" id="roundbox">
+								<div class="tekst-venstre">Svada svada</div>
+								<div class="element-høyre">
+									<input type="checkbox"/>
+								</div>
+							</div>
+							<input type="hidden" id="spesifikasjoner" value="" readonly="true"/>
+						</div>
+						<div class="btn-filtrer" id="roundbox">Finn</div>
+					</div>
 
-
-						<button class="btn btn-primary" type="button">Bestill hytte</button>
+					<div class="col-sm-8">
+						<div class="list-group">
+							<div class="list-group-item">
+								<div id="stikkord">RULLESTOL STROM</div>
+								<div class="hytte-header-container">
+									<img src="images/hytte_ikon_1.png" class="hytteikon"/>
+									<h4 class="list-group-item-heading">Liten hytte</h4>
+									<p class="list-group-item-text">1 soverom</p>
+									<span class="visible-md visible-lg hytte-toggle-arrow">
+										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
+									</span>
+									<span class="label label-primary">WC</span>
+									<span class="label label-primary">Strøm</span>
+									<span class="label label-success">Økonomi</span>
+									<span class="label label-info">Handicap</span>
+								</div>
+								<hr/>
+								<div>
+									<div class="thumbnail-container">
+										<a href="#" class="thumbnail">
+											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+										</a>
+										<a href="#" class="thumbnail" style="margin: 0 auto;">
+											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+										</a>
+										<a href="#" class="thumbnail">
+											<img src="images/hytter/inne/cropped/inne1.jpg" alt="Innsiden av hytten">
+										</a>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
+										<div class="hyttebeskrivelse">Lorem ipsum</div>
+									</div>
+									<div class="col-md-6" style="">
+										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
+										<div class="fasiliteter-liste">
+											<div>Strøm</div>
+											<div>Innlagt vann og WC</div>
+											<div>Lorem</div>
+											<div>Ipsum</div>
+										</div>
+									</div>
+									<div class="bestillingsknapper">
+										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
+										<button class="btn btn-info" type="button">Legg til i bestilling</button>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div id="stikkord">test123</div>
+								<h4 class="list-group-item-heading">Liten hytte</h4>
+								<p class="list-group-item-text">1 soverom</p>
+								<span class="label label-default">Default</span>
+								<span class="label label-primary">Primary</span>
+								<span class="label label-success">Success</span>
+								<span class="label label-info">Info</span>
+								<hr/>
+								<button class="btn btn-primary" type="button">Bestill hytte</button>
+							</div>
+							<div class="list-group-item">
+								<h4 class="list-group-item-heading">Liten hytte</h4>
+								<p class="list-group-item-text">1 soverom</p>
+							</div>
+							<div class="list-group-item">
+								<h4 class="list-group-item-heading">Liten hytte</h4>
+								<p class="list-group-item-text">1 soverom</p>
+							</div>
+							<div class="list-group-item">
+								<h4 class="list-group-item-heading">Liten hytte</h4>
+								<p class="list-group-item-text">1 soverom</p>
+							</div>
+							<div class="list-group-item">
+								<h4 class="list-group-item-heading">Liten hytte</h4>
+								<p class="list-group-item-text">1 soverom</p>
+							</div>
 						</div>
 					</div>
-					<div class="list-group-item">
-						<div id="stikkord">test123</div>
-						<h4 class="list-group-item-heading">Liten hytte</h4>
-						<p class="list-group-item-text">1 soverom</p>
-						<span class="label label-default">Default</span>
-						<span class="label label-primary">Primary</span>
-						<span class="label label-success">Success</span>
-						<span class="label label-info">Info</span>
-						<hr/>
-						<button class="btn btn-primary" type="button">Bestill hytte</button>
-					</div>
-					<div class="list-group-item">
-						<h4 class="list-group-item-heading">Liten hytte</h4>
-						<p class="list-group-item-text">1 soverom</p>
-					</div>
-					<div class="list-group-item">
-						<h4 class="list-group-item-heading">Liten hytte</h4>
-						<p class="list-group-item-text">1 soverom</p>
-					</div>
-					<div class="list-group-item">
-						<h4 class="list-group-item-heading">Liten hytte</h4>
-						<p class="list-group-item-text">1 soverom</p>
-					</div>
-					<div class="list-group-item">
-						<h4 class="list-group-item-heading">Liten hytte</h4>
-						<p class="list-group-item-text">1 soverom</p>
-					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<script src="scripts/slideshow.js"></script>
-	<div class="section-separator" id="margin-top-10"></div>
-	<section>
-		<input type="text">
-	</section>
+			</section>
+			<script src="scripts/slideshow.js"></script>
+			<div class="section-separator" id="margin-top-10"></div>
+			<section>
+				<input type="text">
+			</section>
 
 
 
 
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4">
-					<h3>Column 1</h3>
-					<a href="www.google.com" id="bunnlink"> Kakeform</a>
-					<a href="www.mindwars.no" id="bunnlink"> Påskeegg</a>
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Column 1</h3>
+							<a href="www.google.com" id="bunnlink"> Kakeform</a>
+							<a href="www.mindwars.no" id="bunnlink"> Påskeegg</a>
+						</div>
+						<div class="col-sm-4">
+							<h3>Lenker</h3>
+							<a href="www.google.no" id="bunnlink"> Om oss</a>
+							<br>
+							<a href="www.google.se" id="bunnlink"> Something else</a>
+						</div>
+						<div class="col-sm-4">
+							<h3>Column 3</h3>
+							<a href="www.google.dk" id="bunnlink"> Something</a>
+							<br>
+							<a href="www.google.bo" id="bunnlink"> Eplekake</a>
+							<p id="copyright"> MUCH COPYRIGHT, NO TOUCH, WOW, MINE, NO USE, NO GET PROFIT OFF </p>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-4">
-					<h3>Lenker</h3>
-					<a href="www.google.no" id="bunnlink"> Om oss</a>
-					<br>
-					<a href="www.google.se" id="bunnlink"> Something else</a>
-				</div>
-				<div class="col-sm-4">
-					<h3>Column 3</h3>
-					<a href="www.google.dk" id="bunnlink"> Something</a>
-					<br>
-					<a href="www.google.bo" id="bunnlink"> Eplekake</a>
-					<p id="copyright"> MUCH COPYRIGHT, NO TOUCH, WOW, MINE, NO USE, NO GET PROFIT OFF </p>
-				</div>
-			</div>
-		</div>
-	</section>
-</main>
-<script src="scripts/script.js"></script>
-<script src="scripts/filter.js"></script>
-</body>
-</html>
+			</section>
+		</main>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/filter.js"></script>
+	</body>
+	</html>

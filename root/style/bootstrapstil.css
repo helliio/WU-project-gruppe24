@@ -18,7 +18,9 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-
+	.btn {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
