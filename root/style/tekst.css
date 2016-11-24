@@ -177,8 +177,8 @@ margin-top: 30px;
 	width: 100%;
 	color: #000;
 	font-size: 10pt !important;
-	padding-top: 5px;
-	padding-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 #sporsmal{
 	min-width: 100%;
@@ -240,6 +240,19 @@ hr {
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
 }
+.bekreftelse input[type=radio] {
+	width: 50px !important;
+	margin: 0 auto;
+}
+#collapse1 {
+	background-color: #370;
+	color: white !important;
+	font-size: 10pt;
+	text-align: center;
+}
+#collapse1 a {
+	color: white !important
+}
 .bestillingsknapper {
 	width: 100%;
 	height: auto;
@@ -250,4 +263,8 @@ hr {
 	margin-top: 10px;
 	float: right;
 	margin-left: 10px;
+}
+.thumbnail:hover {
+	opacity: 0.7;
+	cursor: pointer;
 }
