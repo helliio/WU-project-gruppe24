@@ -256,7 +256,7 @@ h2 {
 	color: white;
 	clear: both;
 	margin-left: 10px; border-width: 2px;
-	background-color: darkgreen
+	background-color: rgba(0, 0, 0, 0.2);
 }
 #stikkord {
 	display: none;
@@ -293,7 +293,7 @@ h2 {
 }
 .btn-filtrer:hover {
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .bekreftelse input[type=radio] {
 	width: 18px !important;
