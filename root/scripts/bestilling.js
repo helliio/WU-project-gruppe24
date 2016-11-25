@@ -20,7 +20,7 @@ function setGetParameter(paramName, paramValue)
     }
     window.location.href = url + hash;
 }
-function bestill(rullestol, vann, strom, korttid) {
-    var nyURL = 'bekreft.php?rs=' + rullestol + "&vn=" + vann + "&st=" + strom + "&kt=" + korttid;
+function bestill(rullestol, vann, strom, korttid, hyttenr) {
+    var nyURL = 'bekreft.php?rs=' + rullestol + "&vn=" + vann + "&st=" + strom + "&kt=" + korttid + "&nr=" + hyttenr;
     window.location.href = nyURL;
 }
