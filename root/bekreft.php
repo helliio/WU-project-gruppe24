@@ -53,17 +53,19 @@
 		</div>
 
 		<div class="bekreftelse">
-			<form>
-				<h1 id="bekreftelse-header">Bekreft bestilling</h1>
+
 				<?php
+				echo("<form onsubmit='return valider();'>");
+				echo("<h1 id='bekreftelse-header'>Bekreft bestilling</h1>");
 				/* Denne matrisen ville vi ha hentet fra en database i et virkelig scenario: */
 				$hyttenavn = array("HytteNavn1", "HytteNavn2", "HytteNavn3", "HytteNavn4", "HytteNavn5", "HytteNavn6");
 				$hyttepris = array(400, 500, 600, 700, 800, 900);
-
 				$nr = $_GET['nr'];
 
-				echo("<div class='split-wrapper'><div class='tekst-venstre' style='line-height: 20px;'>Valgt hytte</div><div class='element-hoyre'><input type='text' style='color: black !important; opacity: 0.5;' disabled required value='" . $hyttenavn[$nr-1] . " (nr " . $nr . ")'></div></div>");
-				echo("<span>Pris/døgn:</span><span style='margin-left: 10px;'>" . $hyttepris[$nr] . ",- kr (inkl. mva)</span>");
+				echo("<table class='table'><tr><td>Valgt hytte</td><td>" . $hyttenavn[$nr-1] . "</td></tr>");
+				echo("<tr><td>Hyttenummer</td><td>" . $nr . "</td></tr>");
+				echo("<tr><td>Pris/døgn</td><td>kr " . $hyttepris[$nr-1] . ",-</td></tr></table>");
+				
 				$kt = $_GET['kt'];
 				if ($kt == 1) {
 					echo("<div class='row'>");
@@ -83,35 +85,32 @@
 
 
 
-				Fornavn og etternavn:
-				<input type="text" id="navn"name="navn" required="true">
-				Epost-adresse
+				<label for="navn">Fullt navn</label>
+				<input type="text" id="navn" name="navn" required="true" pattern="[a-zA-Z ]">
+				<label for="epost">Epost-adresse</label>
 				<input type="email" id="epost" name="epost" min="0">
-				Telefonnummer
-				<input type="text" id="tlf" pattern="" name="tlf" required="true">
-				Faktureringsadresse
-				<input type="text" id="adresse" name="adresse" required="true">
+				<label for="tlf">Telefonnummer</label>
+				<input type="text" id="tlf" pattern="[0-9]" name="tlf" required="true">
+				<label for="adresse">Full faktureringsadresse</label>
+				<textarea id="adresse" name="adresse"></textarea>
 
 				<div class="split-wrapper">
-					<input type="checkbox" name="vask" value="vask">
+					<input type="checkbox" name="vask" value="vask" id="vask">
 					<div class="element-hoyre">
 						<div class="tekst-venstre bekreftelse-check">Vaskehjelp etter utsjekk (+500,-)</div>
 					</div>
 				</div>
 				<div class="split-wrapper">
-					<input type="checkbox" name="turistforening" value="turistforening">
+					<input type="checkbox" name="turistforening" value="turistforening" id="turistforening">
 					<div class="element-hoyre">
 						<div class="tekst-venstre bekreftelse-check">Jeg er medlem av turistforeningen (-20%)</div>
 					</div>
 				</div>
-
-				Melding (valgfritt felt)
-				<textarea id="ekstraKommentar" name="sporsmal" form="usrform"></textarea>
-				Hvordan vil du bekrefte kjøpet?
-				<br/>
-				<input type="radio" name="epost" value="Epost" checked>Epost
+				<div id="totalpris">1000 kr</div>
+				<div>Hvordan vil du bekrefte kjøpet?</div>
+				<input type="radio" name="epost" value="epost" checked>Epost
 				<input type="radio" name="sms" value="sms" disabled id="margin-left-10">SMS
-				<button type="submit" id="sendInn">Videre...</button>
+				<input type="submit" id="sendInn" value="Send ordrebekreftelse">
 			</form>
 		</div>
 
@@ -126,5 +125,6 @@
 		</section>
 	</main>
 	<script src="scripts/script.js"></script>
+	<script src="scripts/valider.js"></script>
 </body>
 </html>

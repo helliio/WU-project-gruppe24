@@ -256,11 +256,15 @@ h2 {
 	color: white;
 	clear: both;
 	margin-left: 10px; border-width: 2px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#totalpris {
+	font-size: 20pt !important;
 }
 #stikkord {
 	display: none;
 }
-#ekstraKommentar {
+#adresse {
 	min-width: 100%;
 	max-width: 100%;
 	height: 50px;
@@ -279,6 +283,10 @@ h2 {
 	font-size: 9pt !important;
 	color: white !important;
 }
+label {
+	font-weight: normal;
+	margin: inherit;
+}
 #copyright p {
 	margin-top: 10px !important;
 	margin-bottom: 0 !important;
@@ -287,12 +295,15 @@ h2 {
 #copyright a {
 	color: white;
 }
+.table {
+	margin: 20px auto;
+}
 #copyright a:hover {
 	text-decoration: underline !important;
 }
 .btn-filtrer:hover {
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .bekreftelse input[type=radio] {
 	width: 18px !important;
