@@ -53,28 +53,49 @@
 		</div>
 
 		<div class="bekreftelse">
-			<?php
-			$rs = $_GET['rs'];
-			$vn = $_GET['vn'];
-			$st = $_GET['st'];
-			$kt = $_GET['kt'];
-			echo "teeeeeeeest!" . $rs . $vn . $st . $kt;
-			?>
 			<form>
 				<h1 id="bekreftelse-header">Bekreft bestilling</h1>
+				<?php
+				/* Denne matrisen ville vi ha hentet fra en database i et virkelig scenario: */
+				$hyttenavn = array("HytteNavn1", "HytteNavn2", "HytteNavn3", "HytteNavn4", "HytteNavn5", "HytteNavn6");
+				$hyttepris = array(400, 500, 600, 700, 800, 900);
+
+				$nr = $_GET['nr'];
+
+				echo("<div class='split-wrapper'><div class='tekst-venstre' style='line-height: 20px;'>Valgt hytte</div><div class='element-hoyre'><input type='text' style='color: black !important; opacity: 0.5;' disabled required value='" . $hyttenavn[$nr-1] . " (nr " . $nr . ")'></div></div>");
+				echo("<span>Pris/døgn:</span><span style='margin-left: 10px;'>" . $hyttepris[$nr] . ",- kr (inkl. mva)</span>");
+				$kt = $_GET['kt'];
+				if ($kt == 1) {
+					echo("<div class='row'>");
+					echo("<div class='col-md-5' style='line-height: 30px;'>Dato/tidspunkt innsjekk</div><div class='col-md-7'><input style='color: #FFF;' type='datetime-local'></div>");
+					echo("</div><div class='row'>");
+					echo("<div class='col-md-5' style='line-height: 30px;'>Dato/tidspunkt utsjekk</div><div class='col-md-7'><input style='color: #FFF;' type='datetime-local'></div>");
+					echo("</div>");
+				} else {
+					echo("<div class='row'>");
+					echo("<div class='col-md-4' style='line-height: 30px;'>Dato innsjekk</div><div class='col-md-8'><input type='date'></div>");
+					echo("</div>");
+					echo("<div class='row'>");
+					echo("<div class='col-md-4' style='line-height: 30px;'>Overnattinger</div><div class='col-md-8'><input type='range' min='1' max='30'>");
+					echo("<div id='labAntallOvernattinger'>6</div></div></div>");
+				}
+				?>
+
+
+
 				Fornavn og etternavn:
 				<input type="text" id="navn"name="navn" required="true">
-				E-post adresse:
+				Epost-adresse
 				<input type="email" id="epost" name="epost" min="0">
-				Telefonnummer:
-				<input type="text" id="tlf" name="tlf" required="true">
-				Adresse:
+				Telefonnummer
+				<input type="text" id="tlf" pattern="" name="tlf" required="true">
+				Faktureringsadresse
 				<input type="text" id="adresse" name="adresse" required="true">
 
 				<div class="split-wrapper">
 					<input type="checkbox" name="vask" value="vask">
 					<div class="element-hoyre">
-						<div class="tekst-venstre bekreftelse-check">Jeg har ikke anledning til å vaske opp etter oppholdet (+500,-)</div>
+						<div class="tekst-venstre bekreftelse-check">Vaskehjelp etter utsjekk (+500,-)</div>
 					</div>
 				</div>
 				<div class="split-wrapper">
@@ -84,13 +105,13 @@
 					</div>
 				</div>
 
-				Ekstra kommentarer:
+				Melding (valgfritt felt)
 				<textarea id="ekstraKommentar" name="sporsmal" form="usrform"></textarea>
 				Hvordan vil du bekrefte kjøpet?
 				<br/>
-				<input type="radio" name="sms" value="sms" checked>SMS
-				<input type="radio" name="epost" value="Epost" id="margin-left-10">Epost
-				<button type="submit" id="sendInn">Bekreft bestilling</button>
+				<input type="radio" name="epost" value="Epost" checked>Epost
+				<input type="radio" name="sms" value="sms" disabled id="margin-left-10">SMS
+				<button type="submit" id="sendInn">Videre...</button>
 			</form>
 		</div>
 

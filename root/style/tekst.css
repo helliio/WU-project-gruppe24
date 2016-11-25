@@ -28,6 +28,9 @@
 .logo {
 	text-align: center;
 }
+.bestilling-split {
+	height: 50px !important;
+}
 .bestillingsskjema {
 	width: 100%;
 	max-width: auto;
@@ -46,15 +49,19 @@ input[type=checkbox] {
 	height: 16px;
 	margin-top: 8px !important;
 }
-input[type=datetime-local] {
+input[type=datetime-local], input[type=date] {
 	width: 100%;
 	border: 1px solid white;
 	border-radius: 5px !important;
 	background-color: transparent;
-	color: white;
+	color: #FFF !important;
 	padding: 5px;
 	box-sizing: border-box;
 	height: 30px;
+}
+#labAntallOvernattinger {
+	text-align: center;
+	margin: 0 auto !important;
 }
 .section-separator {
 	width: 100%;
@@ -170,12 +177,12 @@ padding: 20px;
 	padding-bottom: 30px;
 	color: #fff;
 }
-.kontaktskjema input {
+.kontaktskjema input, .bekreftelse input {
 	width: 100%;
 	color: #000;
 	font-size: 10pt !important;
-	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	text-indent: 5px;
 }
 .bekreftelse {
 	font-size: 10pt;
@@ -186,13 +193,6 @@ padding: 20px;
 	padding: 10px;
 	padding-bottom: 30px !important;
 	color: #fff;
-}
-.bekreftelse input {
-	width: 100%;
-	color: #000;
-	font-size: 10pt;
-	margin-bottom: 5px;
-	height: auto !important;
 }
 .bekreftelse .split-wrapper {
 	margin: 0px !important;
