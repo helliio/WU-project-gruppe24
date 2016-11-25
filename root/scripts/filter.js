@@ -12,6 +12,9 @@ $('.btn-filtrer').click(function() {
 	if (document.getElementById('check-strom').checked) {
 		$('#spesifikasjoner').val($('#spesifikasjoner').val() + 'STROM ');
 	}
+	if (document.getElementById('check-korttid').checked) {
+		$('#spesifikasjoner').val($('#spesifikasjoner').val() + 'KORTTID ');
+	}
 
 	var val = $.trim($('#spesifikasjoner').val()).replace(/ +/g, ' ').toLowerCase();
 	$rows.show().filter(function() {
@@ -19,10 +22,3 @@ $('.btn-filtrer').click(function() {
 		return !~text.indexOf(val);
 	}).hide();
 });
-/*
-$(".check").change(function() {
-	if(this.checked) {
-		alert("TEST");
-	}
-});
-*/

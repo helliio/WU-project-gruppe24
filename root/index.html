@@ -81,12 +81,6 @@
 									<input type="datetime-local">
 								</div>
 							</div>
-							<div class="split-wrapper widthfull">
-								<div class="tekst-venstre">Antall netter</div>
-								<div class="element-hoyre">
-									<input type="range"/>
-								</div>
-							</div>
 							<div class="split-wrapper" id="roundbox">
 								<div class="tekst-venstre">Tilrettelegging for rullestol</div>
 								<div class="element-hoyre">
@@ -106,21 +100,9 @@
 								</div>
 							</div>
 							<div class="split-wrapper" id="roundbox">
-								<div class="tekst-venstre">Svada</div>
+								<div class="tekst-venstre">Tilgjengelig for korttidsleie</div>
 								<div class="element-hoyre">
-									<input type="checkbox" class="check" id="check-strom"/>
-								</div>
-							</div>
-							<div class="split-wrapper" id="roundbox">
-								<div class="tekst-venstre">Lorem ipsum</div>
-								<div class="element-hoyre">
-									<input type="checkbox"/>
-								</div>
-							</div>
-							<div class="split-wrapper" id="roundbox">
-								<div class="tekst-venstre">Svada svada</div>
-								<div class="element-hoyre">
-									<input type="checkbox"/>
+									<input type="checkbox" class="check" id="check-korttid"/>
 								</div>
 							</div>
 							<input type="hidden" id="spesifikasjoner" value="" readonly="true"/>
@@ -131,17 +113,16 @@
 					<div class="col-sm-8">
 						<div class="list-group">
 							<div class="list-group-item">
-								<div id="stikkord">RULLESTOL STROM</div>
+								<div id="stikkord">RULLESTOL KORTTID</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">3 ledige</span>
 									</div>
 									<h4 class="list-group-item-heading">Liten hytte</h4>
 									<p class="list-group-item-text">1 soverom</p>
 									<span class="visible-md visible-lg hytte-toggle-arrow">
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
-									<span class="label label-primary">Strøm</span>
 									<span class="label label-info">Rullestol</span>
 								</div>
 								<hr/>
@@ -161,17 +142,16 @@
 								</center>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac pulvinar dolor. Suspendisse ac leo pretium, dictum neque a, pellentesque orci.</div>
+										<div class="hyttebeskrivelse">Denne hytta tilbyr god utsikt mot naturen og har rullestol rampe. Kjøkkenet har blitt full utstyrt. <span class="korttidsLabel">Denne hytta er tiljengelig for korttids utleie</span></div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(1, 0, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(0, 0, 1, 1, 1);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(1);">Se meg på kart</button>
 									</div>
 								</div>
@@ -180,10 +160,10 @@
 								<div id="stikkord">VANN STROM</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">2 ledige</span>
 									</div>
 									<h4 class="list-group-item-heading">Medium hytte</h4>
-									<p class="list-group-item-text">1 soverom</p>
+									<p class="list-group-item-text">2 soverom</p>
 									<span class="visible-md visible-lg hytte-toggle-arrow">
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
@@ -205,19 +185,17 @@
 									</div>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum</div>
+										<div class="hyttebeskrivelse">Et velding fint hytte med vann og og strøm for dagelige behov, Perfekt for deg som er glad i natur men ikke vil leve i det.</div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
 											<div>Innlagt vann og WC</div>
-											<div>Lorem</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(0, 1, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(0, 1, 1, 0, 2);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(2);">Se meg på kart</button>
 									</div>
 								</div>
@@ -226,16 +204,15 @@
 								<div id="stikkord">RULLESTOL STROM</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">1 ledige</span>
 									</div>
-									<h4 class="list-group-item-heading">Stor hytte</h4>
+									<h4 class="list-group-item-heading">Liten hytte</h4>
 									<p class="list-group-item-text">1 soverom</p>
 									<span class="visible-md visible-lg hytte-toggle-arrow">
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
 									<span class="label label-primary">Strøm</span>
-									<span class="label label-success">Økonomi</span>
-									<span class="label label-info">Handicap</span>
+									<span class="label label-info">Rullestol</span>
 								</div>
 								<hr/>
 								<div>
@@ -252,33 +229,32 @@
 									</div>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum</div>
+										<div class="hyttebeskrivelse">Lyst til å komme deg bort fra folk of være litt alene i fjelene for å meditere med naturen? Da er denn hytta prefekt for deg, utstyrt til og med med rullestol rampe!</div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
-											<div>Lorem</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(1, 0, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(1, 0, 1, 0, 3);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(3);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
 							<div class="list-group-item">
-								<div id="stikkord">VANN STROM</div>
+								<div id="stikkord">RULLESTOL VANN STROM KORTTID</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">1 ledige</span>
 									</div>
 									<h4 class="list-group-item-heading">Medium hytte</h4>
-									<p class="list-group-item-text">1 soverom</p>
+									<p class="list-group-item-text">2 soverom</p>
 									<span class="visible-md visible-lg hytte-toggle-arrow">
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
+									<span class="label label-info">Rullestol</span>
 									<span class="label label-primary">WC</span>
 									<span class="label label-primary">Strøm</span>
 								</div>
@@ -297,19 +273,17 @@
 									</div>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum</div>
+										<div class="hyttebeskrivelse">Et veldig tilengelig hytte som har rullestol aksess fint utsikt og strøm. <span class="korttidsLabel">Denne hytta er tiljengelig for korttids utleie</span></div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
 											<div>Innlagt vann og WC</div>
-											<div>Lorem</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(0, 1, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(1, 1, 1, 1, 4);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button"  onclick="visKart(4);">Se meg på kart</button>
 									</div>
 								</div>
@@ -318,7 +292,7 @@
 								<div id="stikkord">RULLESTOL VANN STROM</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">2 ledige</span>
 									</div>
 									<h4 class="list-group-item-heading">Liten hytte</h4>
 									<p class="list-group-item-text">1 soverom</p>
@@ -327,8 +301,7 @@
 									</span>
 									<span class="label label-primary">Strøm</span>
 									<span class="label label-primary">WC</span>
-									<span class="label label-success">Økonomi</span>
-									<span class="label label-info">Handicap</span>
+									<span class="label label-info">Rullestol</span>
 								</div>
 								<hr/>
 								<div>
@@ -345,19 +318,17 @@
 									</div>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum</div>
+										<div class="hyttebeskrivelse">Liten hytte med moderne design, perfet for en helge skitur.</div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
 											<div>Innlagt vann og WC</div>
-											<div>Lorem</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(1, 1, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(1, 1, 1, 0, 5);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(5);">Se meg på kart</button>
 									</div>
 								</div>
@@ -366,16 +337,15 @@
 								<div id="stikkord">VANN STROM</div>
 								<div class="hytte-header-container">
 									<div class="hytteikon">
-										<span class="badge" style="border-radius: 8px !important;">4 ledige</span>
+										<span class="badge" style="border-radius: 8px !important;">3 ledige</span>
 									</div>
 									<h4 class="list-group-item-heading">Stor hytte</h4>
-									<p class="list-group-item-text">1 soverom</p>
+									<p class="list-group-item-text">4 soverom</p>
 									<span class="visible-md visible-lg hytte-toggle-arrow">
 										<img src="images/hytte_pil_ned_hover.png" style="position: absolute; height: 50px; width: 50px; top: 25px; left: calc(50% - 25px); margin: 0 auto; opacity: 0.7;"/>
 									</span>
 									<span class="label label-primary">WC</span>
 									<span class="label label-primary">Strøm</span>
-									<span class="label label-success">Økonomi</span>
 								</div>
 								<hr/>
 								<div>
@@ -392,19 +362,17 @@
 									</div>
 									<div class="col-md-8" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Hyttebeskrivelse</div>
-										<div class="hyttebeskrivelse">Lorem ipsum</div>
+										<div class="hyttebeskrivelse">Denne hytta med båre strøm og vann er perfekt for en familie tur sammen med barna.</div>
 									</div>
 									<div class="col-md-4" style="">
 										<div style="width: 100%; height: auto; border-bottom: 1px solid #999; font-size: 11pt;">Fasiliteter</div>
 										<div class="fasiliteter-liste">
 											<div>Strøm</div>
 											<div>Innlagt vann og WC</div>
-											<div>Lorem</div>
-											<div>Ipsum</div>
 										</div>
 									</div>
 									<div class="bestillingsknapper">
-										<button class="btn btn-primary" type="button" onclick="bestill(0, 1, 1);">Bestill denne hytten</button>
+										<button class="btn btn-primary" type="button" onclick="bestill(0, 1, 1, 0, 6);">Bestill denne hytten</button>
 										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(6);">Se meg på kart</button>
 									</div>
 								</div>
