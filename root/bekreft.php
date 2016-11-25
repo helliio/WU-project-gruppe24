@@ -12,19 +12,23 @@
 	<title>Fjell &amp; Fjord: Hytteutleie For Alle</title>
 </head>
 <body>
-<!--TO DO:
-Sett TabIndexen til elementer i hyttelista til -1, og så i riktig rekkefølge ved åpning
--->
+	<a href="index.html">
 	<header class="jumbotron text-center">
 		<h1 class="logo">Fjell &amp; Fjord</h1>
 		<p>Hytteutleie for alle!</p>
 	</header>
+	</a>
 
 	<main>
 		<div class="section-separator">
 		</div>
 
 		<div class="bekreftelse">
+		<?php
+			$rs = $_GET['rs'];
+			$rs = $_GET['vn'];
+			$rs = $_GET['st'];
+		?>
 		<form>
 			<h1 id="bekreftelse-header">Bekreft bestilling</h1>
 			Fornavn og etternavn:
@@ -61,10 +65,10 @@ Sett TabIndexen til elementer i hyttelista til -1, og så i riktig rekkefølge v
 
 	</section>
 	<div id="copyright">
-		<a href="http://www.google.no">Startside</a><br>
-		<a href="Stien til About us">Om oss</a><br>
-		<a href="Sti til Contact Us">Kontakt oss</a><br>
-		<p id="team24">Copyright © Team 24 (Working Title)</p>
+		<a href="index.html">Hjem</a><br>
+		<a href="omoss.html">Om oss</a><br>
+		<a href="kontakt.html">Kontakt oss</a><br>
+		<p>Copyright © Team 24 (Working Title)</p>
 	</div>
 
 </section>
