@@ -1,6 +1,9 @@
 ﻿a {
 	text-decoration: none !important;
 }
+.korttidsLabel {
+	font-style: italic
+}
 .hytteikon {
 	float: left;
 	width: 80px;
