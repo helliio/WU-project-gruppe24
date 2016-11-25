@@ -1,9 +1,17 @@
-﻿.hytteikon {
+﻿a {
+	text-decoration: none !important;
+}
+.hytteikon {
 	float: left;
 	width: 80px;
 	height: 80px;
 	display: inline-block;
 	margin-right: 10px;
+	text-align: center;
+	line-height: 80px;
+}
+.noselect {
+	user-select: none !important;
 }
 /*
 .bestillingsskjema {
@@ -52,11 +60,6 @@ input[type=datetime-local] {
 	width: 100%;
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.4);
-	font-size: 20pt;
-	line-height: 50px;
-	margin: 0 auto;
-	text-align: center;
-	color: #fff;
 }
 .split-wrapper {
 	width: 100%;
@@ -76,7 +79,7 @@ input[type=datetime-local] {
 .tekst-venstre {
 	font-size: 10pt;
 	color: white;
-	text-align: center;
+	text-align: left;
 	height: 32px;
 	line-height: 32px;
 	padding-right: 10px;
@@ -91,6 +94,12 @@ input[type=datetime-local] {
 	width: 16px;
 	float: left;
 }
+.no-select {
+	user-select: none !important;
+}
+#no-text-decoration:hover h1 {
+	text-decoration: none !important;
+}
 hr {
 	border-color: rgba(0, 0, 0, 0.2);
 	margin-bottom: 0 !important;
@@ -100,10 +109,6 @@ hr {
 	color: #000 !important;
 }
 */
-.panel-title a, .panel-title h2 {
-	text-decoration: none !important;
-	color: #333 !important;
-}
 .thumbnail-container {
 	display: inline-flex;
 	margin: 10px auto !important;
@@ -132,13 +137,6 @@ hr {
 	font-size: 16pt !important;
 	color: black !important;
 }
-#copyright {
-	margin-left: 30%;
-	margin-right: 30%;
-	text-align: center;
-	font-size: 16pt !important;
-	color: black !important;
-}
 #aboutUs {
 font-size: 14pt;
 margin: 0 auto;
@@ -149,6 +147,8 @@ padding: 20px;
 }
 .hytte-header-container {
 	height: 80px;
+	user-select: none !important;
+	cursor: pointer;
 }
 .hytte-header-container:hover img {
 	opacity: 1 !important;
@@ -158,6 +158,9 @@ padding: 20px;
 }
 #margin-top-10 {
 	margin-top: 10px;
+}
+#margin-left-10 {
+	margin-left: 10px !important;
 }
 .kontaktskjema {
 	font-size: 10pt;
@@ -177,16 +180,28 @@ padding: 20px;
 .bekreftelse {
 	font-size: 10pt;
 	margin: 0 auto;
-	width:400px;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+	padding: 10px;
 	padding-bottom: 30px !important;
 	color: #fff;
 }
 .bekreftelse input {
 	width: 100%;
 	color: #000;
-	font-size: 10pt !important;
-	margin-top: 5px;
-	margin-bottom: 10px;
+	font-size: 10pt;
+	margin-bottom: 5px;
+	height: auto !important;
+}
+.bekreftelse .split-wrapper {
+	margin: 0px !important;
+	overflow-y: visible !important;
+}
+.bekreftelse input[type=checkbox] {
+	width: 20px !important;
+	margin-right: 3px;
+	float: left;
 }
 #sporsmal {
 	min-width: 100%;
@@ -194,20 +209,39 @@ padding: 20px;
 	height: 100px;
 	font-size: 10pt;
 	color: #000;
-	margin-top: 5px;
 }
 #sendInn {
 	color: #fff;
 	width: 100%;
 	background-color: transparent !important;
 	border: 1px solid white;
-	border-radius: 5px !important;
+	border-radius: 3px !important;
+	padding: 7px;
+	box-sizing: border-box;
+	margin-top: 8px;
 }
 .hytte-header-container {
 	height: 80px;
 }
 hr {
 	margin-bottom: 0 !important;
+}
+h3 {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	user-select: none !important;
 }
 .btn-filtrer {
 	height: 30px;
@@ -232,35 +266,39 @@ hr {
 	margin-top: 5px;
 }
 #copyright {
-	background-color: #370;
-	margin: 0 auto;
-	padding-top: 30px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 0;
+	margin-top: 20px;
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	box-sizing: border-box;
 	font-size: 9pt !important;
 	color: white !important;
-	padding-bottom: 15px;
 }
-#team24 {
+#copyright p {
 	margin-top: 10px !important;
+	margin-bottom: 0 !important;
+	font-size: 8pt;
 }
 #copyright a {
 	color: white;
+}
+#copyright a:hover {
+	text-decoration: underline !important;
 }
 .btn-filtrer:hover {
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
 }
 .bekreftelse input[type=radio] {
-	width: 50px !important;
-	margin: 0 auto;
+	width: 18px !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
-#collapse1 {
-	background-color: #370;
-	color: white !important;
-	font-size: 10pt;
-	text-align: center;
-}
+
 #collapse1 a {
-	color: white !important
+	color: #444;
 }
 .bestillingsknapper {
 	width: auto;
@@ -286,10 +324,11 @@ h1 {
 	text-align: left;
 	color: white;
 	font-size: 7vw;
+	user-select: none !important;
 }
 #kontakt-header {
 	font-size: 5vw;
 }
 #bekreftelse-header {
-	font-size: 5vw;
+	font-size: 6vw;
 }
