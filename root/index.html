@@ -9,7 +9,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link REL="stylesheet" type="text/css" href="style/tekst.css">
 	<link REL="stylesheet" type="text/css" href="style/bootstrapstil.css">
-	<title>Fjell&amp;Fjord: Hytteutleie For Alle</title>
+	<title>Fjell &amp; Fjord: Hytteutleie For Alle</title>
 	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
 </head>
 
@@ -174,7 +174,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button" onclick="bestill(1, 1, 1);">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(1);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -220,7 +220,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(2);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -266,7 +266,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(3);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -312,7 +312,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button"  onclick="visKart(4);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -360,7 +360,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(5);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -407,7 +407,7 @@
 									</div>
 									<div class="bestillingsknapper">
 										<button class="btn btn-primary" type="button">Bestill denne hytten</button>
-										<button class="btn btn-info" type="button">Se meg på kart</button>
+										<button class="btn btn-info" aria-hidden="true" type="button" onclick="visKart(6);">Se meg på kart</button>
 									</div>
 								</div>
 							</div>
@@ -432,5 +432,6 @@
 <script src="scripts/script.js"></script>
 <script src="scripts/filter.js"></script>
 <script src="scripts/bestilling.js"></script>
+<script src="scripts/kart.js"></script>
 </body>
 </html>

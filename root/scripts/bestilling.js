@@ -20,7 +20,7 @@ function setGetParameter(paramName, paramValue)
     }
     window.location.href = url + hash;
 }
-function bestill(rullestol, vann, strom) {
+function bestill(rullestol, vann, strom, korttid) {
     var nyURL = 'bekreft.php?';
     if (rullestol == 1) {
         nyURL += 'rs=1&';
@@ -30,6 +30,9 @@ function bestill(rullestol, vann, strom) {
     }
     if (strom == 1) {
         nyURL += 'st=1&';
+    }
+    if (korttid == 1) {
+        nyURL += 'kt=1&';
     }
     nyURL += 'js=1'
     window.location.href = nyURL;
