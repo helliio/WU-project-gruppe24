@@ -256,6 +256,7 @@ h2 {
 	color: white;
 	clear: both;
 	margin-left: 10px; border-width: 2px;
+	background-color: darkgreen
 }
 #stikkord {
 	display: none;
