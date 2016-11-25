@@ -24,6 +24,11 @@
 		</div>
 
 		<div class="bekreftelse">
+		<?php
+			$rs = $_GET['rs'];
+			$rs = $_GET['vn'];
+			$rs = $_GET['st'];
+		?>
 		<form>
 			<h1 id="bekreftelse-header">Bekreft bestilling</h1>
 			Fornavn og etternavn:
