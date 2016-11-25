@@ -256,6 +256,7 @@ h2 {
 	color: white;
 	clear: both;
 	margin-left: 10px; border-width: 2px;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 #stikkord {
 	display: none;
@@ -292,7 +293,7 @@ h2 {
 }
 .btn-filtrer:hover {
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .bekreftelse input[type=radio] {
 	width: 18px !important;
@@ -334,4 +335,22 @@ h1 {
 }
 #bekreftelse-header {
 	font-size: 6vw;
+}
+.badge {
+	border-radius: 8px !important;
+}
+.hytte-toggle-arrow img{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 25px;
+	left: calc(50% - 25px);
+	margin: 0 auto;
+	opacity: 0.7;
+}
+.HyttebeskrivelseTittel{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #999;
+	font-size: 11pt;
 }
