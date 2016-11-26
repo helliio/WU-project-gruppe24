@@ -13,21 +13,16 @@
 	text-align: center;
 	line-height: 80px;
 }
+.labSum {
+	margin: 20px 0px 0px 0px !important;
+	border-top: 1px solid white !important;
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
+}
 .noselect {
 	user-select: none !important;
 }
-/*
-.bestillingsskjema {
-	width: 100%;
-	max-width: auto;
-	margin: 0 auto;
-	min-height: 250px;
-	height: auto;
-	padding: 10px;
-	box-sizing: border-box;
-	background-color: red;
-}
-*/
 .logo {
 	text-align: center;
 }
@@ -148,11 +143,19 @@ hr {
 	color: black !important;
 }
 #aboutUs {
-font-size: 14pt;
+font-size: 12pt;
 margin: 0 auto;
 max-width: 500px;
 width: 100%;
 color: #fff;
+padding: 20px;
+}
+#takk {
+font-size: 10pt;
+margin: 0 auto;
+max-width: 500px;
+width: 100%;
+color: #fff !important;
 padding: 20px;
 }
 .hytte-header-container {
@@ -258,10 +261,17 @@ h2 {
 	margin-left: 10px; border-width: 2px;
 	background-color: rgba(0, 0, 0, 0.2);
 }
+#totalpris {
+	font-size: 20pt !important;
+	line-height: 20pt;
+	margin-bottom: 10px;
+	border-bottom: 1px solid white !important;
+	padding-bottom: 10px;
+}
 #stikkord {
 	display: none;
 }
-#ekstraKommentar {
+#adresse {
 	min-width: 100%;
 	max-width: 100%;
 	height: 50px;
@@ -280,6 +290,10 @@ h2 {
 	font-size: 9pt !important;
 	color: white !important;
 }
+label {
+	font-weight: normal;
+	margin: inherit;
+}
 #copyright p {
 	margin-top: 10px !important;
 	margin-bottom: 0 !important;
@@ -287,6 +301,9 @@ h2 {
 }
 #copyright a {
 	color: white;
+}
+.table {
+	margin: 20px auto;
 }
 #copyright a:hover {
 	text-decoration: underline !important;
