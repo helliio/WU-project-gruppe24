@@ -55,6 +55,9 @@
 		padding: 10px;
 		margin-right: 0px;
 	}
+	.bekreftelse {
+		padding: 30px !important;
+	}
 	.bekreftelse-check {
 		font-size: 8pt !important;
 	}

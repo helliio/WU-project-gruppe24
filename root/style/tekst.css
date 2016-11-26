@@ -1,8 +1,14 @@
 ﻿a {
 	text-decoration: none !important;
 }
+textarea:focus, input:focus{
+    outline: none !important;
+    box-shadow: 0px 0px 5px #240 !important;
+    border-color: #240 !important;
+}
 .korttidsLabel {
-	font-style: italic
+	font-style: italic;
+	color: #A00 !important;
 }
 .hytteikon {
 	float: left;
@@ -28,6 +34,15 @@
 }
 .bestilling-split {
 	height: 50px !important;
+}
+.datotid {
+	height: 30px;
+	width: 100% !important;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.datotid:invalid {
+	border-color: red !important;
 }
 .bestillingsskjema {
 	width: 100%;
@@ -183,12 +198,13 @@ padding: 20px;
 	padding-bottom: 30px;
 	color: #fff;
 }
-.kontaktskjema input, .bekreftelse input {
+.kontaktskjema input, .bekreftelse input, .bekreftelse textarea {
 	width: 100%;
 	color: #000;
 	font-size: 10pt !important;
 	margin-bottom: 5px;
 	text-indent: 5px;
+	border: 1px solid #270;
 }
 .bekreftelse {
 	font-size: 10pt;
@@ -225,6 +241,9 @@ padding: 20px;
 	padding: 7px;
 	box-sizing: border-box;
 	margin-top: 8px;
+}
+#sendInn:hover {
+	background-color: rgba(155, 255, 0, 0.3) !important;
 }
 .hytte-header-container {
 	height: 80px;
@@ -370,4 +389,5 @@ h1 {
 	height: auto;
 	border-bottom: 1px solid #999;
 	font-size: 11pt;
+	margin-top: 10px !important;
 }
