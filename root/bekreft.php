@@ -9,7 +9,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link REL="stylesheet" type="text/css" href="style/tekst.css">
 	<link REL="stylesheet" type="text/css" href="style/bootstrapstil.css">
-	<title>Fjell &amp; Fjord: Hytteutleie For Alle</title>
+	<title>Bekreft hytteleie - Fjell &amp; Fjord</title>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 	<a href="index.html">
@@ -53,65 +54,115 @@
 		</div>
 
 		<div class="bekreftelse">
-
 				<?php
-				echo("<form onsubmit='return valider();'>");
-				echo("<h1 id='bekreftelse-header'>Bekreft bestilling</h1>");
 				/* Denne matrisen ville vi ha hentet fra en database i et virkelig scenario: */
-				$hyttenavn = array("HytteNavn1", "HytteNavn2", "HytteNavn3", "HytteNavn4", "HytteNavn5", "HytteNavn6");
-				$hyttepris = array(400, 500, 600, 700, 800, 900);
+				$hyttenavn = array("Rød hytte", "Blå hytte", "Gul hytte", "Grønn hytte", "Lilla hytte", "Brun hytte");
+				$hyttepris = array(150, 500, 600, 200, 800, 900);
 				$nr = $_GET['nr'];
-
-				echo("<table class='table'><tr><td>Valgt hytte</td><td>" . $hyttenavn[$nr-1] . "</td></tr>");
-				echo("<tr><td>Hyttenummer</td><td>" . $nr . "</td></tr>");
-				echo("<tr><td>Pris/døgn</td><td>kr " . $hyttepris[$nr-1] . ",-</td></tr></table>");
-				
 				$kt = $_GET['kt'];
+				$benevning = "";
 				if ($kt == 1) {
-					echo("<div class='row'>");
-					echo("<div class='col-md-5' style='line-height: 30px;'>Dato/tidspunkt innsjekk</div><div class='col-md-7'><input style='color: #FFF;' type='datetime-local'></div>");
-					echo("</div><div class='row'>");
-					echo("<div class='col-md-5' style='line-height: 30px;'>Dato/tidspunkt utsjekk</div><div class='col-md-7'><input style='color: #FFF;' type='datetime-local'></div>");
-					echo("</div>");
+					$benevning = "time";
 				} else {
-					echo("<div class='row'>");
-					echo("<div class='col-md-4' style='line-height: 30px;'>Dato innsjekk</div><div class='col-md-8'><input type='date'></div>");
-					echo("</div>");
-					echo("<div class='row'>");
-					echo("<div class='col-md-4' style='line-height: 30px;'>Overnattinger</div><div class='col-md-8'><input type='range' min='1' max='30'>");
-					echo("<div id='labAntallOvernattinger'>6</div></div></div>");
+					$benevning = "døgn";
 				}
 				?>
+				<h1 id='bekreftelse-header'>Bekreft bestilling</h1>
+				<table class='table'>
+					<?php
+					echo("
+						<tr>
+							<td>Valgt hytte</td>
+							<td>" . $hyttenavn[$nr-1] . "</td>
+						</tr>
+						<tr>
+							<td>Hyttenummer</td>
+							<td>" . $nr . "</td>
+						</tr>
+						<tr>
+							<td>Pris/" . $benevning . "</td>
+							<td>kr " . $hyttepris[$nr-1] . ",-</td>
+						</tr>				
+						");
+						?>
+				</table>
+				<?php
+				echo("<form method='GET' onsubmit='return valider(" . $kt . ");' action='scripts/send.php'>");
+				if ($kt == 1) {
+					echo("
+						<div class='row'>
+							<div class='col-md-5' style='line-height: 30px;'>Dato/tidspunkt innsjekk</div>
+							<div class='col-md-7'>" .
+							// Tillater kun "realistiske" datoer og tid (det vil for eksempel si at klokkeslettet "25:00" ikke tillates)
+							"<input type='text' class='datotid' id='start' name='start' pattern='(0[1-9]|1[0-9]|2[0-9]|3[01])[\./](0[1-9]|1[012])[\./]20(1[6-9]|[2-9][0-9]) (0[0-9]|1[0-9]|2[0-4]):([0-5][0-9])' placeholder='DD.MM.ÅÅÅÅ 12:00' title='Eksempel: 11.01.2017 11:30'>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-md-5' style='line-height: 30px;'>Antall timer</div>
+							<div class='col-md-7'>
+								<input name='antall' id='antall' type='range' min='1' max='24' value='15'>
+								<div id='labAntallOvernattinger'>15</div>
+							</div>
+						</div>
+					");
+				} else {
+					echo("
+						<div class='row'>
+							<div class='col-md-5' style='line-height: 30px;'>Dato innsjekk</div>
+							<div class='col-md-7'>
+								<input type='text' class='datotid' id='roundbox' name='start' pattern='(0[1-9]|1[0-9]|2[0-9]|3[01])[\./](0[1-9]|1[012])[\./]20(1[6-9]|[2-9][0-9])' placeholder='DD.MM.ÅÅÅÅ' title='Eksempel: 11.01.2017'>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-md-5' style='line-height: 30px;'>Antall døgn</div>
+							<div class='col-md-7'>
+								<input name='antall' id='antall' type='range' min='2' max='30' value='15'>
+								<div id='labAntallOvernattinger'>15</div>
+							</div>
+						</div>
+					");
+				}
+				?>
+				<div>
+					<label for="navn">Navn</label>
+					<input type="text" id="navn" name="navn" pattern="[a-zA-ZæøåÆØÅ]{1}([a-zæøå]*[\- ][a-zA-ZæøåÆØÅ]){0,1}([a-zæøå]{1,19})+$">
+				
+					<label for="ep">Epost-adresse</label>
+					<input type="email" id="ep" name="ep" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
 
+					<label for="tlf">Telefonnummer</label>
+					<input type="tel" id="tlf" minlength="4" maxlength="14" pattern="[0-9]+" name="tlf" required>
 
+					<label for="adresse">Full faktureringsadresse</label>
+					<textarea id="adresse" name="adresse"></textarea>
 
-				<label for="navn">Fullt navn</label>
-				<input type="text" id="navn" name="navn" required="true" pattern="[a-zA-Z ]">
-				<label for="epost">Epost-adresse</label>
-				<input type="email" id="epost" name="epost" min="0">
-				<label for="tlf">Telefonnummer</label>
-				<input type="text" id="tlf" pattern="[0-9]" name="tlf" required="true">
-				<label for="adresse">Full faktureringsadresse</label>
-				<textarea id="adresse" name="adresse"></textarea>
-
-				<div class="split-wrapper">
-					<input type="checkbox" name="vask" value="vask" id="vask">
-					<div class="element-hoyre">
-						<div class="tekst-venstre bekreftelse-check">Vaskehjelp etter utsjekk (+500,-)</div>
+					<div class="split-wrapper">
+						<input type="checkbox" onchange="visPris();" name="vask" value="vask" id="vask">
+						<div class="element-hoyre">
+							<div class="tekst-venstre bekreftelse-check">Vaskehjelp etter utsjekk (+500,-)</div>
+						</div>
 					</div>
-				</div>
-				<div class="split-wrapper">
-					<input type="checkbox" name="turistforening" value="turistforening" id="turistforening">
-					<div class="element-hoyre">
-						<div class="tekst-venstre bekreftelse-check">Jeg er medlem av turistforeningen (-20%)</div>
+
+					<div class="split-wrapper">
+						<input type="checkbox" onchange="visPris();" name="turistforening" value="turistforening" id="turistforening">
+						<div class="element-hoyre">
+							<div class="tekst-venstre bekreftelse-check">Jeg er medlem av turistforeningen (-20%)</div>
+						</div>
 					</div>
+
+					<div class="labSum">Sum (inkludert mva)</div>
+					<div id="totalpris">
+				<?php
+				echo('kr ' . ($hyttepris[$nr-1]*15) . ',-
 				</div>
-				<div id="totalpris">1000 kr</div>
-				<div>Hvordan vil du bekrefte kjøpet?</div>
-				<input type="radio" name="epost" value="epost" checked>Epost
-				<input type="radio" name="sms" value="sms" disabled id="margin-left-10">SMS
+				<input type="hidden" id="sum" name="sum" value="' . ($hyttepris[$nr-1]*15) . '">
+				<input type="hidden" id="hyttenr" name="hyttenr" value="' . $nr . '">
+				<input type="hidden" id="benevning" name="benevning" value="' . $benevning . '">');
+				?>
 				<input type="submit" id="sendInn" value="Send ordrebekreftelse">
-			</form>
+				</div>
+				</form>
+				
 		</div>
 
 		<section>
@@ -121,7 +172,6 @@
 				<a href="kontakt.html">Kontakt oss</a><br>
 				<p>Copyright © Team 24 (Working Title)</p>
 			</div>
-
 		</section>
 	</main>
 	<script src="scripts/script.js"></script>

@@ -50,3 +50,24 @@ function visObjekt(objekt){
 		"opacity": "1"
 	});
 }
+
+var hyttePris = $('#sum').val() / 15;
+
+function updateUI() {
+	$('#labAntallOvernattinger').text($('#antall').val());
+	var pris = $('#antall').val() * hyttePris;
+	if($('#vask').prop("checked")) {
+		pris += 500;
+	}
+	if($('#turistforening').prop("checked")) {
+		pris *= .8;
+	}
+	$('#totalpris').text('kr ' + pris + ',-');
+	$('#sum').val(pris);
+}
+
+$('#antall').change(updateUI).mousemove(updateUI);
+$('#vask').change(updateUI);
+$('#turistforening').change(updateUI);
+
+updateUI();
