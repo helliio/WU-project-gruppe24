@@ -55,11 +55,15 @@
 
 		<div class="bekreftelse">
 				<?php
-				/* Denne matrisen ville vi ha hentet fra en database i et virkelig scenario: */
+				// Fordi vi ikke bruker et DBMS i dette prosjektet, lagrer vi navnene til de 6 hyttene i en matrise i den rekkefølgen de vises på forsiden.
 				$hyttenavn = array("Rød hytte", "Blå hytte", "Gul hytte", "Grønn hytte", "Lilla hytte", "Brun hytte");
+				// Pris (kr) på enten ett døgn eller en time, avhengig av om hytten er for korttidsutleie. I vårt eksempel er den første hytten ("Rød hytte") og den fjerde hytten ("Grønn hytte") slike tilfeller.
 				$hyttepris = array(150, 500, 600, 200, 800, 900);
+				// Hent hyttenummeret og hvorvidt hytten er markert for korttidsutleie, fra URL.
 				$nr = $_GET['nr'];
 				$kt = $_GET['kt'];
+
+				// Litt redundans her. En bittelitt penere løsning hadde vært å lage en matrise = ["døgn","time"], og bruke matrise[$kt], men there's no time.
 				$benevning = "";
 				if ($kt == 1) {
 					$benevning = "time";
@@ -67,9 +71,11 @@
 					$benevning = "døgn";
 				}
 				?>
+
 				<h1 id='bekreftelse-header'>Bekreft bestilling</h1>
 				<table class='table'>
 					<?php
+					// Vis hyttenavnet, hyttenummeret og pris per døgn eller time
 					echo("
 						<tr>
 							<td>Valgt hytte</td>
@@ -87,6 +93,7 @@
 						?>
 				</table>
 				<?php
+				// Viser skjemaet via echo for enkelt å gi $kt til valideringsfunksjonen (JavaScript)
 				echo("<form method='GET' onsubmit='return valider(" . $kt . ");' action='scripts/send.php'>");
 				if ($kt == 1) {
 					echo("
@@ -151,18 +158,18 @@
 					</div>
 
 					<div class="labSum">Sum (inkludert mva)</div>
-					<div id="totalpris">
-				<?php
-				echo('kr ' . ($hyttepris[$nr-1]*15) . ',-
+						<div id="totalpris">
+							<?php
+							// Beregner og viser en totalpris basert på hyttepris*antall, slik at den står klar når siden er lastet og synlig.
+							echo('kr ' . ($hyttepris[$nr-1]*15) . ',-
+						</div>
+						<input type="hidden" id="sum" name="sum" value="' . ($hyttepris[$nr-1]*15) . '">
+						<input type="hidden" id="hyttenr" name="hyttenr" value="' . $nr . '">
+						<input type="hidden" id="benevning" name="benevning" value="' . $benevning . '">
+						<input type="submit" id="sendInn" value="Send ordrebekreftelse">
 				</div>
-				<input type="hidden" id="sum" name="sum" value="' . ($hyttepris[$nr-1]*15) . '">
-				<input type="hidden" id="hyttenr" name="hyttenr" value="' . $nr . '">
-				<input type="hidden" id="benevning" name="benevning" value="' . $benevning . '">');
+				</form>');
 				?>
-				<input type="submit" id="sendInn" value="Send ordrebekreftelse">
-				</div>
-				</form>
-				
 		</div>
 
 		<section>
